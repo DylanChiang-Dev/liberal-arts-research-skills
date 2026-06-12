@@ -41,6 +41,10 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | `defense-prep` | 🚧 規劃中 | 口試準備：論文壓縮成簡報、模擬口試委員出難題 | 第 10 章 |
 | `ai-disclosure` | 🚧 規劃中 | AI 使用揭露：按學校／期刊格式生成使用聲明 | 第 11 章 |
 
+## 實測案例
+
+- [案例 001：作者用 citation-verify 查核自己的碩士論文](examples/2026-06-12-master-thesis-case.md) — 47 筆全量查核，抓到 3 筆 DOI 貼錯、1 筆作者拆名、11 筆出處不全，附公開勘誤表。
+
 ## 設計原則
 
 - **單文件技能**：每個技能一個 `SKILL.md`，看得懂、改得動，歡迎 fork 改造成你的領域版本。
