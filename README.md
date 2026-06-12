@@ -31,7 +31,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 
 | 技能 | 狀態 | 功能 | 對應書章 |
 |---|---|---|---|
-| `citation-verify` | ✅ v0.1 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
+| `citation-verify` | ✅ 0.0.1 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
 | `topic-refine` | 🚧 規劃中 | 蘇格拉底式磨題：把模糊興趣磨成可研究的問題 | 第 3 章 |
 | `lit-matrix` | 🚧 規劃中 | 文獻矩陣：批量精讀筆記與綜述對話地圖 | 第 5 章 |
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
@@ -46,6 +46,14 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 - **單文件技能**：每個技能一個 `SKILL.md`，看得懂、改得動，歡迎 fork 改造成你的領域版本。
 - **不編造**：所有技能內建「查無即標註、不確定即說明」的硬規則。
 - **中文優先**：為華語文科研究場景設計（含台灣學術環境的引用與政策語境）。
+
+## 版本策略
+
+- **0.0.X**：打磨輪——任何技能經實測修訂一輪，尾號 +1（當前 0.0.1）
+- **0.X.0**：新技能發布——對應書稿一章完成，中號 +1
+- **1.0.0**：《文科生的 AI 研究工作流》出版日定版
+
+每個版本打 git tag，CHANGELOG 記在 `MEMORY.md`。
 
 ## 授權與致謝
 
