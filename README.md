@@ -14,7 +14,17 @@ A Claude Code skill collection for liberal-arts students and researchers — the
 
 ## 安裝
 
-把技能目錄複製到你的專案或全域技能目錄即可：
+**方式一：一句話交給 Claude Code（推薦，不需要會終端機）**
+
+打開 Claude Code，把這句話貼進去：
+
+```
+幫我從 https://github.com/DylanChiang-Dev/liberal-arts-research-skills 安裝 citation-verify 技能
+```
+
+它會自己下載倉庫、把技能檔放到正確位置、跟你回報裝了什麼。預設裝到當前專案；想讓所有專案都能用，句尾加「到全域技能目錄」。新裝的技能在下次啟動 Claude Code 時生效。（2026-06 實測通過；過程中它要動你的檔案時會先徵求同意，看一眼再按確認。）
+
+**方式二：手動複製（會用終端機的話）**
 
 ```bash
 # 全域安裝（所有專案可用）
@@ -31,7 +41,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 
 | 技能 | 狀態 | 功能 | 對應書章 |
 |---|---|---|---|
-| `citation-verify` | ✅ 0.0.1 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
+| `citation-verify` | ✅ 0.0.2 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
 | `topic-refine` | 🚧 規劃中 | 蘇格拉底式磨題：把模糊興趣磨成可研究的問題 | 第 3 章 |
 | `lit-matrix` | 🚧 規劃中 | 文獻矩陣：批量精讀筆記與綜述對話地圖 | 第 5 章 |
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
