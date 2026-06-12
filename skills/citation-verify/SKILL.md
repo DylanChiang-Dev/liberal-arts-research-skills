@@ -33,15 +33,18 @@ curl -s "https://api.crossref.org/works/<DOI>"
 - HTTP 404 → DOI 不存在，高度可疑，標 `❌`
 - 返回成功 → 進入第 3 步比對
 
-**無 DOI 的條目** — 用標題＋作者檢索，依序嘗試，任一命中即進入比對：
+**無 DOI 的條目** — 用標題＋作者檢索，依序嘗試（標題需 URL 編碼，中文標題同樣編碼後可查）：
 
 ```
-curl -s "https://api.crossref.org/works?query.bibliographic=<標題>&rows=3"
-curl -s "https://api.openalex.org/works?search=<標題>&per-page=3"
+curl -s "https://api.crossref.org/works?query.bibliographic=<標題>&rows=3&mailto=ci@example.org"
+curl -s "https://api.openalex.org/works?filter=title.search:<標題>,publication_year:<宣稱年前後各1年>&sort=cited_by_count:desc&per-page=3"
 curl -s "https://api.semanticscholar.org/graph/v1/paper/search?query=<標題>&limit=3&fields=title,authors,year,venue,externalIds"
 ```
 
-注意：Semantic Scholar 無金鑰時有速率限制，收到 429 就跳過該源；三源都查不到才進入「查無」判定。中文標題先以原文查 OpenAlex（覆蓋部分中文文獻），再試英譯標題。
+- OpenAlex 必須用 `filter=title.search:`，**不要用 `search=`**（後者全文檢索，噪音極大）；帶上宣稱年份過濾＋被引數排序，正主通常被引最高。
+- Semantic Scholar 無金鑰時有速率限制，收到 429 就跳過該源。
+- 疑似會議論文／預印本（電腦科學領域常見）可加查 arXiv：`curl -s 'http://export.arxiv.org/api/query?search_query=ti:"<標題>"&max_results=3'`
+- **模糊檢索永遠會返回東西**——「有結果」不等於「查到了」，判定只能發生在第 3 步的逐項比對；前 3 個候選都要比，不能只看第一個。
 
 ### 第 3 步：比對與判級
 
@@ -77,6 +80,13 @@ curl -s "https://api.semanticscholar.org/graph/v1/paper/search?query=<標題>&li
 > 提醒：本報告只確認文獻「存在且書目正確」。每一筆引用是否真的支持你文中的論點，
 > 必須由你回源閱讀確認——這一步沒有任何工具可以代替。
 ```
+
+## 已知陷阱（實測發現，比對時必讀）
+
+1. **重複／可疑 DOI 登記**：用標題查知名論文，Crossref 可能返回多個近年註冊的同名 DOI（實測 "Attention Is All You Need" 返回三個 2025 年登記的副本）。特徵：年份比宣稱晚很多年、無期刊名、同名多胞胎。此時**不可**據此判 ⚠️ 年份不符——應判「文獻本身存在、權威記錄混亂」，標 ⚠️ 並建議用戶回原始出處（會議官網、arXiv、出版社頁面）確認書目。
+2. **書評陷阱**：與專書同名的 `type: journal-article` 多半是該書的**書評**（實測 Nye《Soft Power》返回三筆同名期刊文章，全是書評）。書評不能用來核實專書本身——專書一律走 ❓，用 WorldCat／圖書館目錄。
+3. **OpenAlex 中文覆蓋是部分的**：查得到中文文獻不代表覆蓋完整；中文條目即使 OpenAlex 無結果也只能標 ❓，仍走人工管道。
+4. **比對看欄位不看排名**：檢索排名第一不代表是正主；逐項比對標題／作者／年份才算數，必要時用被引數輔助判斷（正主通常被引遠高於同名作品）。
 
 ## ❓待人工的建議管道（台灣語境）
 
