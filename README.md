@@ -1,10 +1,10 @@
 # Liberal Arts Research Skills
 
-**文科生的 AI 研究技能庫** — 給不會寫程式的研究者的 Claude Code 技能集，覆蓋「讀文獻到寫論文」的完整工作流。
+**文組生的 AI 研究技能庫** — 給不會寫程式的研究者的 Claude Code 技能集，覆蓋「讀文獻到寫論文」的完整工作流。
 
 A Claude Code skill collection for liberal-arts students and researchers — the full workflow from literature to thesis, no coding required. Chinese-first (Traditional).
 
-> 本倉庫是《文科生的 AI 研究工作流》（撰寫中）的隨書開源技能庫：書裡每一章的操作，這裡都有對應的、裝上就能跑的技能。技能先行發布、隨書稿迭代。
+> 本倉庫是《文組生的 AI 研究工作流》（撰寫中）的隨書開源技能庫：書裡每一章的操作，這裡都有對應的、裝上就能跑的技能。技能先行發布、隨書稿迭代。
 
 ## 理念
 
@@ -55,7 +55,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 
 - **0.0.X**：打磨輪——任何技能經實測修訂一輪，尾號 +1（當前 0.0.1）
 - **0.X.0**：新技能發布——對應書稿一章完成，中號 +1
-- **1.0.0**：《文科生的 AI 研究工作流》出版日定版
+- **1.0.0**：《文組生的 AI 研究工作流》出版日定版
 
 每個版本打 git tag，CHANGELOG 記在 `MEMORY.md`。
 
