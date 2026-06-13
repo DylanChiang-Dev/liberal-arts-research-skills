@@ -46,7 +46,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | `lit-matrix` | ✅ 0.0.2 | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖；與 citation-verify 分工（它驗真偽、本技能理內容） | 第 5 章 |
 | `method-design` | ✅ 0.0.2 | 研究設計：方法地圖（訪談/問卷/個案/論述分析）、起草訪談大綱問卷＋人工校準引導題、角色扮演預訪談測題、編碼建議（詮釋留你）、統計謬誤核驗、倫理 | 第 6 章 |
 | `outline-builder` | ✅ 0.0.2 | 論文骨架：選結構模式（IMRaD/綜述/思辨/政策）、長出「每章回答什麼」的大綱、段落論證鏈 claim–evidence–warrant（專補推理橋）、查重疊章節 | 第 7 章 |
-| `style-tune` | 🚧 規劃中 | 聲音校準：用你的舊文校準文風，識別 AI 腔 | 第 8 章 |
+| `style-tune` | ✅ 0.0.2 | 聲音校準：用舊文讓 AI 學你的文風、段落級潤稿（守整篇代寫紅線）、中文學術 AI 腔識別清單、改稿停止條件 | 第 8 章 |
 | `self-review` | ✅ 0.0.2 | 自我審查：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀）；按文稿類型調整角色；與 citation-verify、lit-matrix 串用 | 第 9 章 |
 | `defense-prep` | ✅ 0.0.2 | 口試準備：論文→簡報骨架、分層出難題（澄清/方法/理論/貢獻/陷阱）、答詢策略（含英文）；判論文階段；與 self-review 串用 | 第 10 章 |
 | `ai-disclosure` | 🚧 規劃中 | AI 使用揭露：按學校／期刊格式生成使用聲明 | 第 11 章 |
@@ -60,6 +60,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 - [案例 005：用 topic-refine 把「對兩岸關係有興趣」磨成研究問題](examples/2026-06-14-topicrefine-cross-strait.md) — 有界發散→三問盤問，在「日台非官方安全合作」上踩出可行性紅燈（資料閉門），示範如何換做法保住問題；暴露「發散失控／封閉領域可得性／替學生編問題意識」三盲點，回饋升 0.0.2。
 - [案例 006：用 method-design 檢視作者碩論研究設計](examples/2026-06-14-methoddesign-thesis.md) — 質性訪談五層級對象，暴露「對象分層要想清楚／AI 扮受訪者太乖／小圈子去識別化難」三盲點，回饋升 0.0.2。
 - [案例 007：用 outline-builder 檢視作者碩論骨架](examples/2026-06-14-outlinebuilder-thesis.md) — 暴露「前置章節重複膨脹／完整性幻覺（齊全≠有論證線）／warrant 缺席（理科腦寫1+1=2不寫如何=2）」，回饋升 0.0.2。
+- [案例 008：用 style-tune 掃作者碩論的 AI 腔](examples/2026-06-14-styletune-thesis.md) — 一本談 GenAI 的論文緒論本身讀起來像 AI 生成（總之收尾/萬能讚詞/空洞排比）；暴露「AI 腔的專業偽裝（整齊≠好）／整篇 AI 腔時段落級潤救不了」，回饋升 0.0.2。
 
 ## 設計原則
 
