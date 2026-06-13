@@ -43,7 +43,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 |---|---|---|---|
 | `citation-verify` | ✅ 0.0.2 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
 | `topic-refine` | 🚧 規劃中 | 蘇格拉底式磨題：把模糊興趣磨成可研究的問題 | 第 3 章 |
-| `lit-matrix` | 🚧 規劃中 | 文獻矩陣：批量精讀筆記與綜述對話地圖 | 第 5 章 |
+| `lit-matrix` | 🧪 0.0.1 初版（未實測） | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖；與 citation-verify 分工（它驗真偽、本技能理內容） | 第 5 章 |
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
 | `outline-builder` | 🚧 規劃中 | 論文骨架：從研究問題與文獻地圖長出章節大綱 | 第 7 章 |
 | `style-tune` | 🚧 規劃中 | 聲音校準：用你的舊文校準文風，識別 AI 腔 | 第 8 章 |
