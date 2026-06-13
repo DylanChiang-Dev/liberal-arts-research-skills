@@ -47,7 +47,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
 | `outline-builder` | 🚧 規劃中 | 論文骨架：從研究問題與文獻地圖長出章節大綱 | 第 7 章 |
 | `style-tune` | 🚧 規劃中 | 聲音校準：用你的舊文校準文風，識別 AI 腔 | 第 8 章 |
-| `self-review` | 🧪 0.0.1 初版（未實測） | 自我審查：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀）；與 citation-verify、lit-matrix 串用 | 第 9 章 |
+| `self-review` | ✅ 0.0.2 | 自我審查：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀）；按文稿類型調整角色；與 citation-verify、lit-matrix 串用 | 第 9 章 |
 | `defense-prep` | 🚧 規劃中 | 口試準備：論文壓縮成簡報、模擬口試委員出難題 | 第 10 章 |
 | `ai-disclosure` | 🚧 規劃中 | AI 使用揭露：按學校／期刊格式生成使用聲明 | 第 11 章 |
 
@@ -55,6 +55,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 
 - [案例 001：作者用 citation-verify 查核自己的碩士論文](examples/2026-06-12-master-thesis-case.md) — 47 筆全量查核，抓到 3 筆 DOI 貼錯、1 筆作者拆名、11 筆出處不全，附公開勘誤表。
 - [案例 002：用 lit-matrix 整理碩論核心文獻](examples/2026-06-13-litmatrix-thesis-litreview.md) — 5 篇異質文獻分群做矩陣與對話地圖；暴露「內容層級三級／多源仍抓不到摘要／引用語境≠主題／異質語料分群」等真實限制，回饋升 0.0.2。
+- [案例 003：用 self-review 審本書自己的第 5 章](examples/2026-06-13-selfreview-book-ch5.md) — 一桌審稿人審一篇教學文，暴露「文稿類型錯配／證據-宣稱規模不相稱／絕對宣稱」三盲點，回饋升 0.0.2；並當場抓到第 5 章兩個可改點。
 
 ## 設計原則
 
