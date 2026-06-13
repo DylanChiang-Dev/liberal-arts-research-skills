@@ -42,7 +42,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | 技能 | 狀態 | 功能 | 對應書章 |
 |---|---|---|---|
 | `citation-verify` | ✅ 0.0.2 | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否真實存在 | 第 4 章 |
-| `topic-refine` | 🚧 規劃中 | 蘇格拉底式磨題：把模糊興趣磨成可研究的問題 | 第 3 章 |
+| `topic-refine` | ✅ 0.0.2 | 蘇格拉底式磨題：問題意識→有界發散→三問收斂（新/可行/誰在乎）→指導教授模擬→一頁研究問題簡報；只追問不給答案 | 第 3 章 |
 | `lit-matrix` | ✅ 0.0.2 | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖；與 citation-verify 分工（它驗真偽、本技能理內容） | 第 5 章 |
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
 | `outline-builder` | 🚧 規劃中 | 論文骨架：從研究問題與文獻地圖長出章節大綱 | 第 7 章 |
@@ -57,6 +57,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 - [案例 002：用 lit-matrix 整理碩論核心文獻](examples/2026-06-13-litmatrix-thesis-litreview.md) — 5 篇異質文獻分群做矩陣與對話地圖；暴露「內容層級三級／多源仍抓不到摘要／引用語境≠主題／異質語料分群」等真實限制，回饋升 0.0.2。
 - [案例 003：用 self-review 審本書自己的第 5 章](examples/2026-06-13-selfreview-book-ch5.md) — 一桌審稿人審一篇教學文，暴露「文稿類型錯配／證據-宣稱規模不相稱／絕對宣稱」三盲點，回饋升 0.0.2；並當場抓到第 5 章兩個可改點。
 - [案例 004：用 defense-prep 模擬作者碩論的口試](examples/2026-06-14-defenseprep-thesis.md) — 分層出真考題（方法/理論/陷阱/可推論性），暴露「論文階段誤判／弱點多層輪問要歸組／漏質性可推論性」三盲點，回饋升 0.0.2。四個 skill 至此全用在同一本論文：查引用→理文獻→審論證→練口試。
+- [案例 005：用 topic-refine 把「對兩岸關係有興趣」磨成研究問題](examples/2026-06-14-topicrefine-cross-strait.md) — 有界發散→三問盤問，在「日台非官方安全合作」上踩出可行性紅燈（資料閉門），示範如何換做法保住問題；暴露「發散失控／封閉領域可得性／替學生編問題意識」三盲點，回饋升 0.0.2。
 
 ## 設計原則
 
