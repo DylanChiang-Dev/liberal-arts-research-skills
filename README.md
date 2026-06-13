@@ -47,7 +47,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | `method-design` | 🚧 規劃中 | 研究設計：方法選擇、訪談大綱與問卷的預訪談模擬 | 第 6 章 |
 | `outline-builder` | 🚧 規劃中 | 論文骨架：從研究問題與文獻地圖長出章節大綱 | 第 7 章 |
 | `style-tune` | 🚧 規劃中 | 聲音校準：用你的舊文校準文風，識別 AI 腔 | 第 8 章 |
-| `self-review` | 🚧 規劃中 | 自我審查：多角色模擬審稿（方法論／領域／魔鬼代言人） | 第 9 章 |
+| `self-review` | 🧪 0.0.1 初版（未實測） | 自我審查：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀）；與 citation-verify、lit-matrix 串用 | 第 9 章 |
 | `defense-prep` | 🚧 規劃中 | 口試準備：論文壓縮成簡報、模擬口試委員出難題 | 第 10 章 |
 | `ai-disclosure` | 🚧 規劃中 | AI 使用揭露：按學校／期刊格式生成使用聲明 | 第 11 章 |
 
