@@ -50,11 +50,11 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | `self-review` | ✅ 0.0.2 | 自我審查：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀）；按文稿類型調整角色；與 citation-verify、lit-matrix 串用 | 第 9 章 |
 | `defense-prep` | ✅ 0.0.2 | 口試準備：論文→簡報骨架、分層出難題（澄清/方法/理論/貢獻/陷阱）、答詢策略（含英文）；判論文階段；與 self-review 串用 | 第 10 章 |
 | `ai-disclosure` | ✅ 0.0.2 | AI 使用揭露：盤點使用→抄襲/代寫/輔助三分法→按目標機構格式生成誠實具體聲明→留痕自證→師生溝通；立場透明非隱藏 | 第 11 章 |
-| `cite-format` | 🆕 0.0.1 | 引用格式整理：APA/Chicago/MLA 格式轉換與全文統一、隨文引註↔文末清單一一對應檢查（抓孤兒引註/條目）、缺漏欄位標註不編造；只管格式不驗真偽（真偽交 citation-verify） | 第 4・10 章 |
-| `abstract-bilingual` | 🆕 0.0.1 | 中英雙語摘要：從定稿濃縮中文摘要＋英文摘要（按英文學術慣例重寫、非逐字翻譯）＋中英關鍵詞；只濃縮不新增、數字人名逐一核對 | 第 8・10 章 |
-| `research-roadmap` | 🆕 0.0.1 | 全流程導航（**書脊**）：判斷你在「讀文獻到寫論文」的哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；只導航不代跑，串起其餘十一個 skill | 序章・第 1 章 |
+| `cite-format` | ✅ 0.0.2 | 引用格式整理：APA/Chicago/MLA 格式轉換與全文統一、隨文引註↔文末清單一一對應檢查（抓孤兒引註/條目）、缺漏欄位標註不編造；只管格式不驗真偽（真偽交 citation-verify） | 第 4・10 章 |
+| `abstract-bilingual` | ✅ 0.0.2 | 中英雙語摘要：從定稿濃縮中文摘要＋英文摘要（按英文學術慣例重寫、非逐字翻譯）＋中英關鍵詞；只濃縮不新增、數字人名逐一核對 | 第 8・10 章 |
+| `research-roadmap` | ✅ 0.0.2 | 全流程導航（**書脊**）：判斷你在「讀文獻到寫論文」的哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；只導航不代跑，串起其餘十一個 skill | 序章・第 1 章 |
 
-> **九個核心 skill**（逐階段工作）＋**兩個收尾 skill**（`cite-format`、`abstract-bilingual`，定稿階段）＋**一個導航 skill**（`research-roadmap`，書脊）＝**十二個**。後三個為新增、尚未實測打磨（標 🆕 0.0.1）。
+> **九個核心 skill**（逐階段工作）＋**兩個收尾 skill**（`cite-format`、`abstract-bilingual`，定稿階段）＋**一個導航 skill**（`research-roadmap`，書脊）＝**十二個**，皆 0.0.2、皆實測打磨。
 
 ## 實測案例
 
@@ -67,6 +67,9 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 - [案例 007：用 outline-builder 檢視作者碩論骨架](examples/2026-06-14-outlinebuilder-thesis.md) — 暴露「前置章節重複膨脹／完整性幻覺（齊全≠有論證線）／warrant 缺席（理科腦寫1+1=2不寫如何=2）」，回饋升 0.0.2。
 - [案例 008：用 style-tune 掃作者碩論的 AI 腔](examples/2026-06-14-styletune-thesis.md) — 一本談 GenAI 的論文緒論本身讀起來像 AI 生成（總之收尾/萬能讚詞/空洞排比）；暴露「AI 腔的專業偽裝（整齊≠好）／整篇 AI 腔時段落級潤救不了」，回饋升 0.0.2。
 - [案例 009：用 ai-disclosure 為「這本書」生成 AI 使用聲明](examples/2026-06-14-aidisclosure-thisbook.md) — 最徹底的測試：一本用 AI 寫的書揭露自己怎麼用 AI；暴露「重度使用時 AI 不敢說／產出類型決定聲明形式」，回饋升 0.0.2。
+- [案例 010：用 abstract-bilingual 為作者碩論生中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) — 從五要素濃縮中英摘要，暴露「原稿關鍵詞中英本身不對齊要標註非自行增刪／『顯著』是統計詞別照搬／混合方法要寫出整合」，回饋升 0.0.2。
+- [案例 011：用 cite-format 整理作者碩論參考文獻格式](examples/2026-06-14-citeformat-thesis.md) — 排 APA 7，坐實「先驗後排（未查核清單＝錯資料的漂亮包裝）」，暴露「重複判定要看標題非作者+年／API 查不到的類型是 cite-format 主場兼易錯區」，回饋升 0.0.2。
+- [案例 012：用 research-roadmap 導航本書工作流](examples/2026-06-14-researchroadmap-bookworkflow.md) — 暴露「最大退化＝目錄朗讀機（要按產出物倒推非按章節順序）／『讀完寫完』是自我感覺要用產出物核實／階段順序依論文類型不同」，回饋升 0.0.2。
 
 ## 設計原則
 
