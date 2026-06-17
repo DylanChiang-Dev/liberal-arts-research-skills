@@ -1,4 +1,4 @@
-语言：[繁體中文](README.md) | [简体中文](README.zh-CN.md)
+语言：[繁體中文](README.md) | [简体中文](README.zh-CN.md) | [English](README.en.md) | [日本語](README.ja.md)
 
 <div align="center">
 

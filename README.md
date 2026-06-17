@@ -1,4 +1,4 @@
-語言：[繁體中文](README.md) | [简体中文](README.zh-CN.md)
+語言：[繁體中文](README.md) | [简体中文](README.zh-CN.md) | [English](README.en.md) | [日本語](README.ja.md)
 
 <div align="center">
 
@@ -24,7 +24,7 @@
 
 > 本倉庫是一套給文組研究者使用的 AI 研究 skill 庫，整理從磨題、查引用、讀文獻、研究設計、搭大綱、寫初稿、自我審查到口試準備的完整工作流。所有 skill 以真實研究材料實測打磨，可在 Claude Code / Codex 等支援 agent skills 的環境中使用。
 
-简体中文与中国大陆高校使用说明见 [README.zh-CN.md](README.zh-CN.md)。
+简体中文与中国大陆高校使用说明见 [README.zh-CN.md](README.zh-CN.md)。English and Japanese introductions are available in [README.en.md](README.en.md) and [README.ja.md](README.ja.md).
 
 一句話講清楚這個倉庫在做什麼：**把指導教授腦子裡那種「看三篇文獻就知道這題能不能做」的判斷，盡量拆成明白的規則與提問，寫成你隨時叫得動的流程。** 它縮小資訊差，但不替你做研究——
 
