@@ -2,9 +2,9 @@
 
 <div align="center">
 
-# 文科生的 AI 研究工作流
+# 人文社科 AI 研究技能库
 
-### Liberal Arts Research Skills
+### 文科生的 AI 研究工作流
 
 **给不会写代码的文科 / 人文社科研究者的 Claude Code / Codex skill 库，从选题、查文献、读文献、研究设计到写论文、预审和答辩。**
 

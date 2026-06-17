@@ -2,11 +2,11 @@
 
 <div align="center">
 
-# 文組生的 AI 研究工作流
+# 人文社科 AI 研究技能庫
 
-### Liberal Arts Research Skills
+### 文組生的 AI 研究工作流
 
-**給不會寫程式的研究者的 Claude Code / Codex 技能庫——從讀文獻到寫論文，一條人工帶路的工作流。**
+**給不會寫程式的文組／人文社科研究者的 Claude Code / Codex 技能庫——從讀文獻到寫論文，一條人工帶路的工作流。**
 
 *A Claude Code / Codex skill collection for liberal-arts researchers — the full path from literature to thesis, no coding required.*
 
