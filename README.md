@@ -20,7 +20,7 @@
 
 ---
 
-> 本倉庫是《**文組生的 AI 研究工作流——用 Claude Code 從讀文獻到寫論文，不會寫程式也做得到**》（撰寫中）的隨書開源技能庫。書裡每一章的操作，這裡都有對應的、裝上就能跑的 skill；技能先行發布、隨書稿迭代。它同時是書內 QR code 指向的**線上更新頁**。
+> 本倉庫是一套給文組研究者使用的 AI 研究 skill 庫，整理從磨題、查引用、讀文獻、研究設計、搭大綱、寫初稿、自我審查到口試準備的完整工作流。所有 skill 以真實研究材料實測打磨，可在 Claude Code / Codex 等支援 agent skills 的環境中使用。
 
 一句話講清楚這個倉庫在做什麼：**把指導教授腦子裡那種「看三篇文獻就知道這題能不能做」的判斷，盡量拆成明白的規則與提問，寫成你隨時叫得動的流程。** 它縮小資訊差，但不替你做研究——
 
@@ -31,7 +31,7 @@
 - **苦工外包，判斷自留。** skill 處理檢索、查核、格式、模擬提問；研究問題、方法選擇與詮釋，永遠是你的。
 - **凡引用必回源。** skill 只證明文獻存在，不證明它支持你的論點。
 - **透明而非遮掩。** 全部 skill 鼓勵留痕與 AI 使用揭露，目標是品質，不是隱藏協作事實。
-- **人工帶路，不是一鍵跑完。** 這不是全自動論文機（那正是本書批評的東西）——每一步 AI 幹活、你握方向盤。
+- **人工帶路，不是一鍵跑完。** 這不是全自動論文機——每一步 AI 幹活、你握方向盤。
 
 ## 🗺️ 工作流地圖
 
@@ -60,30 +60,30 @@ flowchart TD
 
 ### 核心 · 一階段一個
 
-| skill | 功能 | 章 |
+| skill | 功能 | 階段 |
 |---|---|---|
-| [`topic-refine`](skills/topic-refine) | 蘇格拉底式磨題：問題意識 → 有界發散 → 三問收斂（新／可行／誰在乎）→ 指導教授模擬 → 一頁研究問題簡報；只追問不給答案 | 3 |
-| [`citation-verify`](skills/citation-verify) | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否**真實存在**，抓 DOI 貼錯、拆名、虛構引用 | 4 |
-| [`lit-matrix`](skills/lit-matrix) | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖 | 5 |
-| [`method-design`](skills/method-design) | 研究設計：方法地圖、起草訪談大綱／問卷＋人工校準、角色扮演預訪談、編碼建議（詮釋留你）、統計謬誤核驗 | 6 |
-| [`outline-builder`](skills/outline-builder) | 論文骨架：選結構模式（IMRaD／綜述／思辨／政策）、長出大綱、段落論證鏈 claim–evidence–warrant（專補推理橋） | 7 |
-| [`style-tune`](skills/style-tune) | 聲音校準：用舊文讓 AI 學你的文風、段落級潤稿（守整篇代寫紅線）、中文學術 AI 腔識別清單 | 8 |
-| [`self-review`](skills/self-review) | 自我審查（**模擬審查**）：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀） | 9 |
-| [`defense-prep`](skills/defense-prep) | 口試準備：論文 → 簡報骨架、分層出難題（澄清／方法／理論／貢獻／陷阱）、答詢策略（含英文） | 10 |
-| [`ai-disclosure`](skills/ai-disclosure) | AI 使用揭露：盤點使用 → 抄襲／代寫／輔助三分法 → 按目標機構格式生成誠實具體聲明 → 留痕自證 | 11 |
+| [`topic-refine`](skills/topic-refine) | 蘇格拉底式磨題：問題意識 → 有界發散 → 三問收斂（新／可行／誰在乎）→ 指導教授模擬 → 一頁研究問題簡報；只追問不給答案 | 磨題 |
+| [`citation-verify`](skills/citation-verify) | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否**真實存在**，抓 DOI 貼錯、拆名、虛構引用 | 找文獻 |
+| [`lit-matrix`](skills/lit-matrix) | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖 | 讀文獻 |
+| [`method-design`](skills/method-design) | 研究設計：方法地圖、起草訪談大綱／問卷＋人工校準、角色扮演預訪談、編碼建議（詮釋留你）、統計謬誤核驗 | 設計 |
+| [`outline-builder`](skills/outline-builder) | 論文骨架：選結構模式（IMRaD／綜述／思辨／政策）、長出大綱、段落論證鏈 claim–evidence–warrant（專補推理橋） | 大綱 |
+| [`style-tune`](skills/style-tune) | 聲音校準：用舊文讓 AI 學你的文風、段落級潤稿（守整篇代寫紅線）、中文學術 AI 腔識別清單 | 初稿 |
+| [`self-review`](skills/self-review) | 自我審查（**模擬審查**）：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀） | 自審 |
+| [`defense-prep`](skills/defense-prep) | 口試準備：論文 → 簡報骨架、分層出難題（澄清／方法／理論／貢獻／陷阱）、答詢策略（含英文） | 口試 |
+| [`ai-disclosure`](skills/ai-disclosure) | AI 使用揭露：盤點使用 → 抄襲／代寫／輔助三分法 → 按目標機構格式生成誠實具體聲明 → 留痕自證 | 揭露 |
 
 ### 收尾 · 定稿階段
 
-| skill | 功能 | 章 |
+| skill | 功能 | 階段 |
 |---|---|---|
-| [`cite-format`](skills/cite-format) | 引用格式整理：APA／Chicago／MLA 轉換與全文統一、隨文引註↔文末清單一一對應（抓孤兒）、缺欄位標註不編造；**只管格式不驗真偽** | 4・10 |
-| [`abstract-bilingual`](skills/abstract-bilingual) | 中英雙語摘要：從定稿濃縮中文摘要＋英文摘要（按英文慣例重寫、非逐字翻譯）＋中英關鍵詞；只濃縮不新增、數字逐一核對 | 8・10 |
+| [`cite-format`](skills/cite-format) | 引用格式整理：APA／Chicago／MLA 轉換與全文統一、隨文引註↔文末清單一一對應（抓孤兒）、缺欄位標註不編造；**只管格式不驗真偽** | 格式 |
+| [`abstract-bilingual`](skills/abstract-bilingual) | 中英雙語摘要：從定稿濃縮中文摘要＋英文摘要（按英文慣例重寫、非逐字翻譯）＋中英關鍵詞；只濃縮不新增、數字逐一核對 | 摘要 |
 
 ### 導航 · 書脊
 
-| skill | 功能 | 章 |
+| skill | 功能 | 階段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**只導航不代跑**，串起其餘十一個 | 序・1 |
+| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**只導航不代跑**，串起其餘十一個 | 導航 |
 
 ## 🚀 安裝
 
@@ -141,16 +141,16 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 |---|---|---|
 | 001 | [citation-verify 查作者碩論](examples/2026-06-12-master-thesis-case.md) | 47 筆全量查核，抓到 **3 筆 DOI 貼錯**、1 筆拆名、11 筆出處不全，附公開勘誤表 |
 | 002 | [lit-matrix 整理碩論文獻](examples/2026-06-13-litmatrix-thesis-litreview.md) | 5 篇異質文獻分群做矩陣；暴露「引用語境≠主題／異質語料分群」 |
-| 003 | [self-review 審本書第 5 章](examples/2026-06-13-selfreview-book-ch5.md) | 暴露「文稿類型錯配／證據-宣稱規模不相稱／絕對宣稱」 |
+| 003 | [self-review 審教學稿](examples/2026-06-13-selfreview-teaching-chapter.md) | 暴露「文稿類型錯配／證據-宣稱規模不相稱／絕對宣稱」 |
 | 004 | [defense-prep 模擬碩論口試](examples/2026-06-14-defenseprep-thesis.md) | 分層出真考題；暴露「論文階段誤判／漏質性可推論性」 |
 | 005 | [topic-refine 磨「兩岸關係」題](examples/2026-06-14-topicrefine-cross-strait.md) | 在「日台非官方安全」踩出可行性紅燈（資料閉門），示範換做法保住問題 |
 | 006 | [method-design 檢視碩論設計](examples/2026-06-14-methoddesign-thesis.md) | 暴露「對象分層要想清楚／AI 扮受訪者太乖」 |
 | 007 | [outline-builder 檢視碩論骨架](examples/2026-06-14-outlinebuilder-thesis.md) | 暴露「完整性幻覺（齊全≠論證線）／warrant 缺席」 |
 | 008 | [style-tune 掃碩論 AI 腔](examples/2026-06-14-styletune-thesis.md) | 一本談 GenAI 的論文緒論本身讀起來像 AI 生成；暴露「AI 腔的專業偽裝」 |
-| 009 | [ai-disclosure 為「這本書」生成聲明](examples/2026-06-14-aidisclosure-thisbook.md) | 一本用 AI 寫的書揭露自己怎麼用 AI；暴露「重度使用時 AI 不敢說」 |
+| 009 | [ai-disclosure 處理重度 AI 協作聲明](examples/2026-06-14-aidisclosure-heavy-ai-use.md) | 暴露「重度使用時 AI 不敢說」 |
 | 010 | [abstract-bilingual 生碩論中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) | 抓到「官方關鍵詞中英本身不對齊／『顯著』是統計詞別照搬」 |
 | 011 | [cite-format 排碩論參考文獻](examples/2026-06-14-citeformat-thesis.md) | 坐實「先驗後排——未查核清單＝錯資料的漂亮包裝」 |
-| 012 | [research-roadmap 導航本書工作流](examples/2026-06-14-researchroadmap-bookworkflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按章節順序 |
+| 012 | [research-roadmap 導航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按線性順序 |
 
 ## 🧱 設計原則
 
@@ -170,8 +170,8 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 | 版號 | 意義 |
 |---|---|
 | `0.0.X` | 打磨輪——任何 skill 經實測修訂一輪，尾號 +1 |
-| `0.X.0` | 新 skill 發布——對應書稿一章完成，中號 +1 |
-| `1.0.0` | 《文組生的 AI 研究工作流》出版日定版 |
+| `0.X.0` | 新 skill 發布或工作流結構調整，中號 +1 |
+| `1.0.0` | 全套 skill 穩定版 |
 
 每個版本打 git tag，CHANGELOG 記在 [`MEMORY.md`](MEMORY.md)。
 
@@ -186,4 +186,4 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 - **The AI Scientist**（Lu et al., 2024, [arXiv:2408.06292](https://arxiv.org/abs/2408.06292), Sakana AI）—— 全自動化研究的失敗模式
 - **Zhao et al.（2026）** —— 對幻覺引用的大規模實證
 
-> 僅借鑑理念方向與問題意識，**提示語、結構、案例全部原創自製**——零內容轉述、不抄 prompt、不用截圖。這份分寸，正是本書談的學術誠信。
+> 僅借鑑理念方向與問題意識，**提示語、結構、案例全部原創自製**——零內容轉述、不抄 prompt、不用截圖。這份分寸，也是本庫堅持的學術誠信。
