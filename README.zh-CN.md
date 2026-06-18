@@ -240,6 +240,8 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 每个 skill 都拿**真实研究材料**跑过、把暴露的坑写回规则。案例多来自作者真实硕士论文与教学稿，用来说明这些 skill 在真实写作和修改过程中会抓到什么问题。
 
+验证状态分三层：`Draft`（草稿，尚未形成证据链）、`Beta`（可用但仍在打磨）、`Stable`（已用真实材料跑过并写回规则）。目前 12 个 skill 均为 **Stable**；证据链、最小 evidence ledger、source map / action map 规格见 [`VERIFICATION.md`](VERIFICATION.md)。
+
 | # | 案例 | 一句话战果 |
 |---|---|---|
 | 001 | [citation-verify 查作者硕士论文](examples/2026-06-12-master-thesis-case.md) | 47 笔全量核查，抓到 3 笔 DOI 贴错、1 笔拆名、11 笔出处不全 |
@@ -262,6 +264,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 - **用—磨—写**：每个 skill 都先拿真实材料跑，把坑写回规则，才升版本号。
 - **中文优先**：为华语人文社科研究场景设计；大陆使用时请按本校模板、数据库和政策要求调整。
 - **轻量参考层**：`VERIFICATION.md` 汇总实测证据，`knowledge/` 放 venue 与中文学术写作速查卡，`templates/` 放可填空论文和答辩骨架。
+- **不做重型自动化框架**：不引入 `_shared/` fragments、`manifest.yaml` 分片加载、多 agent 长跑 orchestrator；除非某个 skill 长到不可读，才把少量共用材料外移。
 
 ## 版本策略
 

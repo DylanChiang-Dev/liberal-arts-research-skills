@@ -163,6 +163,18 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 このリポジトリは、AI 利用を正直に説明するための補助をします。AI 利用を隠す、検出を回避する、代筆を軽い校正のように見せる、といった用途は扱いません。
 
+## 検証状態
+
+各 skill の検証状態は三段階で考えます。
+
+- `Draft`：設計段階。まだ十分な実測証拠がありません。
+- `Beta`：利用可能ですが、境界条件や地域差をさらに確認する段階です。
+- `Stable`：実際の研究材料で検証し、見つかった失敗パターンを `SKILL.md` に反映済みです。
+
+現在の 12 個の skill はすべて **Stable** です。証拠の一覧、最小 evidence ledger、source map / action map の形式は [`VERIFICATION.md`](VERIFICATION.md) にまとめています。
+
+このリポジトリは軽量な skill 集として維持します。`_shared/` fragments、`manifest.yaml` による分割読み込み、長時間の multi-agent orchestrator は、現段階では採用しません。
+
 ## ライセンス
 
 MIT License. Copyright Dylan Chiang.

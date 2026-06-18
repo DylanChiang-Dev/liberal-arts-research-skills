@@ -2,6 +2,11 @@
 
 ## CHANGELOG
 
+### main（2026-06-18）驗證說明補丁
+
+- `VERIFICATION.md` 補技能驗證狀態（Draft / Beta / Stable）、Evidence Ledger 最小格式、Source Map / Action Map，以及刻意不採用 `_shared/` fragments、`manifest.yaml` 分片載入、多 agent 長跑 orchestrator 的邊界。
+- 四語 README 補驗證狀態口徑；繁中、簡中、英文 README 同步補「不做重型自動化框架」設計原則。
+
 ### v0.2.0（2026-06-18）知識與模板版
 
 - 新增 VERIFICATION.md（驗證證據鏈）、knowledge/（venue 分級方法卡＋中文學術寫作範本卡）、templates/（三種論文結構＋口試簡報骨架）。

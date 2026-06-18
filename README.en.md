@@ -203,6 +203,8 @@ This repository helps you state AI use honestly. It does not help with hiding AI
 
 Each skill has been tested on real research materials, including thesis references, literature-review drafts, teaching manuscripts, and workflow cases.
 
+Validation status has three levels: `Draft` (designed but not yet evidence-backed), `Beta` (usable but still being refined), and `Stable` (tested on real materials, with lessons written back into the skill). All 12 current skills are **Stable**. See [`VERIFICATION.md`](VERIFICATION.md) for the evidence chain, minimum evidence ledger, source map, and action map conventions.
+
 | # | Case | Result |
 |---|---|---|
 | 001 | [citation-verify on a master's thesis bibliography](examples/2026-06-12-master-thesis-case.md) | Checked 47 references; found wrong DOIs, split names, incomplete records, and duplicates. |
@@ -226,6 +228,7 @@ Each skill has been tested on real research materials, including thesis referenc
 - **Humanities and social sciences first:** built for interpretation-heavy research, not only lab-style workflows.
 - **Multilingual entry, single skill source:** README files may be localized, but the 12 skills remain one maintained set.
 - **Lightweight reference layer:** `VERIFICATION.md` summarizes tested evidence, `knowledge/` stores venue and Chinese academic-style reference cards, and `templates/` provides fill-in paper and defense skeletons.
+- **No heavy automation framework:** Boya does not adopt `_shared/` fragments, `manifest.yaml` loading, or long-running multi-agent orchestration unless a specific skill becomes too large to read directly.
 
 ## Versioning
 
