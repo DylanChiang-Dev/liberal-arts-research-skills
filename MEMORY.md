@@ -2,6 +2,12 @@
 
 ## CHANGELOG
 
+### main（2026-06-18）venue-fit 真跑升 Beta
+
+- `venue-fit` 用作者碩士論文《生成式人工智慧使用行為之研究：以立法委員助理為例》對標《公共行政學報》真實投稿規範，新增 `examples/2026-06-18-venuefit-thesis-jpa.md`。
+- 實測暴露 4 個規則點：不得補編作者須知、學位論文轉期刊先判文稿類型、AI 使用指引已成投稿硬條件、近兩年目錄契合未查即標待補。
+- `VERIFICATION.md` 將 `venue-fit` 由 Draft 改 Beta；`evals/venue-fit.md` 回填基準輸入與新 MUST/MUST NOT；`skills/venue-fit/SKILL.md` 補實測狀態與學位論文轉期刊規則。
+
 ### main（2026-06-18）驗證說明補丁
 
 - `VERIFICATION.md` 補技能驗證狀態（Draft / Beta / Stable）、Evidence Ledger 最小格式、Source Map / Action Map，以及刻意不採用 `_shared/` fragments、`manifest.yaml` 分片載入、多 agent 長跑 orchestrator 的邊界。

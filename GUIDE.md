@@ -60,7 +60,7 @@ Boya 不適合用來做這些事：
 | 統一 APA / Chicago / MLA 等引用格式 | `cite-format` |
 | 從定稿濃縮中英摘要與關鍵詞 | `abstract-bilingual` |
 | 不確定下一步 | `research-roadmap` |
-| 投稿前對標目標刊作者須知 | `venue-fit`（Draft） |
+| 投稿前對標目標刊作者須知 | `venue-fit`（Beta） |
 
 若你要讓 agent 自己判斷，請它先讀 [ROUTER.md](ROUTER.md)。
 
@@ -123,7 +123,7 @@ self-review
 
 一般研究者不必先讀 `evals/` 才能使用 Boya；但如果你想 fork 這套 skill，請先讀對應 eval。
 
-## 6. 投稿延伸：venue-fit 目前是 Draft
+## 6. 投稿延伸：venue-fit 目前是 Beta
 
 `venue-fit` 是 0.3.0 新增的投稿對標 skill。它做的事很窄：拿你的定稿，對上目標刊的真實作者須知，列出 must-fix、should-fix、待補查證。
 
@@ -133,7 +133,7 @@ self-review
 - 目標刊規範必須由你提供真實來源；查不到就標「待補」。
 - 它只指出差距，不替你決定投不投，也不代寫修改稿。
 
-目前 `venue-fit` 在 [VERIFICATION.md](VERIFICATION.md) 中標為 **Draft**，因為它尚未拿真實投稿案例完整實跑。升 Beta 前，需要補一份 `examples/` 實跑真錄，並校準 `evals/venue-fit.md`。
+目前 `venue-fit` 在 [VERIFICATION.md](VERIFICATION.md) 中標為 **Beta**，已有作者碩論對標《公共行政學報》的真實案例（`examples/2026-06-18-venuefit-thesis-jpa.md`）。升 Stable 前，還需要更多不同語種或不同學科的投稿案例。
 
 ## 7. 誠信紅線
 

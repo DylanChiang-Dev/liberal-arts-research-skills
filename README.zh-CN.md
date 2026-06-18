@@ -15,7 +15,7 @@
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#十二个-skill)
+[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#十三个-skill)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![简体中文](https://img.shields.io/badge/简体中文-Ready-e4002b?style=for-the-badge)](#)
 
@@ -45,7 +45,7 @@
 
 ## 工作流地图
 
-从一个念头到一篇可以交出去的论文，十二个 skill 各守一段，`research-roadmap` 在最上层导航：
+从一个念头到一篇可以交出去的论文，十三个 skill 各守一段，`research-roadmap` 在最上层导航：
 
 ```mermaid
 flowchart TD
@@ -57,16 +57,17 @@ flowchart TD
     S5 --> S6[写初稿<br/>style-tune]
     S6 --> S7[自我审查<br/>self-review]
     S7 --> S8[定稿与答辩<br/>defense-prep · cite-format · abstract-bilingual]
-    S8 --> S9[AI 使用说明<br/>ai-disclosure]
-    S9 --> End([可交出去的论文])
+    S8 --> S9[投稿对标<br/>venue-fit]
+    S9 --> S10[AI 使用说明<br/>ai-disclosure]
+    S10 --> End([可交出去的论文])
     RM{{research-roadmap<br/>全程导航}} -.随时定位你在哪.-> S1
     RM -.该调用哪个 skill.-> S5
-    RM -.哪些只能你决定.-> S9
+    RM -.哪些只能你决定.-> S10
 ```
 
-## 十二个 skill
+## 十三个 skill
 
-> **九个核心**（逐阶段工作）+ **两个收尾**（定稿阶段）+ **一个导航**（全程定位）= **十二个**。同一套 skill 可用于繁体中文、简体中文与中英混合研究材料。
+> **十个核心**（逐阶段工作）+ **两个收尾**（定稿阶段）+ **一个导航**（全程定位）= **十三个**。同一套 skill 可用于繁体中文、简体中文与中英混合研究材料。
 
 ### 核心：一阶段一个
 
@@ -80,6 +81,7 @@ flowchart TD
 | [`style-tune`](skills/style-tune) | 声音校准：用旧文让 AI 学你的文风、段落级润色（守住整篇代写红线）、中文学术 AI 腔识别清单 | 初稿 |
 | [`self-review`](skills/self-review) | 自我审查（模拟审查）：方法论 / 领域 / 魔鬼代言人 / 主编多角色审稿 + 学术诚信自查 + 意见分级 | 预审 |
 | [`defense-prep`](skills/defense-prep) | 答辩准备：论文 → 汇报骨架、分层出难题（澄清 / 方法 / 理论 / 贡献 / 陷阱）、答辩策略（含英文） | 答辩 |
+| [`venue-fit`](skills/venue-fit) | 投稿对标：用定稿对上目标 venue 的真实作者须知，列出 must-fix/should-fix/待补核查；不编期刊规范，不替你决定投哪 | 投稿 |
 | [`ai-disclosure`](skills/ai-disclosure) | AI 使用说明：盘点使用 → 抄袭 / 代写 / 辅助三分法 → 按学校或期刊要求生成诚实具体的 AI 使用说明 → 留痕自证 | 说明 |
 
 ### 收尾：定稿阶段
@@ -240,7 +242,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 每个 skill 都拿**真实研究材料**跑过、把暴露的坑写回规则。案例多来自作者真实硕士论文与教学稿，用来说明这些 skill 在真实写作和修改过程中会抓到什么问题。
 
-验证状态分三层：`Draft`（草稿，尚未形成证据链）、`Beta`（可用但仍在打磨）、`Stable`（已用真实材料跑过并写回规则）。目前 12 个 skill 均为 **Stable**；证据链、最小 evidence ledger、source map / action map 规格见 [`VERIFICATION.md`](VERIFICATION.md)。
+验证状态分三层：`Draft`（草稿，尚未形成证据链）、`Beta`（可用但仍在打磨）、`Stable`（已用真实材料跑过并写回规则）。目前 12 个 skill 为 **Stable**，`venue-fit` 为 **Beta**；证据链、最小 evidence ledger、source map / action map 规格见 [`VERIFICATION.md`](VERIFICATION.md)。
 
 | # | 案例 | 一句话战果 |
 |---|---|---|
@@ -256,6 +258,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 010 | [abstract-bilingual 生成硕士论文中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) | 抓到中英关键词不对齐与“显著”误用问题 |
 | 011 | [cite-format 排硕士论文参考文献](examples/2026-06-14-citeformat-thesis.md) | 坐实“先验后排”：未核查清单只是错资料的漂亮包装 |
 | 012 | [research-roadmap 导航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化“流程朗读机”：要按产出物定位，而不是按线性顺序 |
+| 013 | [venue-fit 对标作者硕士论文与《公共行政学报》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐实“不编作者须知”与“学位论文转期刊先判文稿类型”，venue-fit 升 Beta |
 
 ## 设计原则
 

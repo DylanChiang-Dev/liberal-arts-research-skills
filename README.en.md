@@ -13,7 +13,7 @@ Languages: [繁體中文](README.md) | [简体中文](README.zh-CN.md) | [Englis
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#the-12-skills)
+[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#the-13-skills)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![English](https://img.shields.io/badge/English-Ready-e4002b?style=for-the-badge)](#)
 
@@ -43,7 +43,7 @@ The core idea: **make tacit supervisor-like judgment more explicit.** These skil
 
 ## Workflow Map
 
-From a rough idea to a thesis or paper ready for submission, the 12 skills each cover one part of the workflow. `research-roadmap` sits above them as the navigator.
+From a rough idea to a thesis or paper ready for submission, the 13 skills each cover one part of the workflow. `research-roadmap` sits above them as the navigator.
 
 ```mermaid
 flowchart TD
@@ -55,16 +55,17 @@ flowchart TD
     S5 --> S6[Draft and tune style<br/>style-tune]
     S6 --> S7[Self-review<br/>self-review]
     S7 --> S8[Finalize and defend<br/>defense-prep · cite-format · abstract-bilingual]
-    S8 --> S9[AI-use statement<br/>ai-disclosure]
-    S9 --> End([A paper or thesis ready to submit])
+    S8 --> S9[Venue fit<br/>venue-fit]
+    S9 --> S10[AI-use statement<br/>ai-disclosure]
+    S10 --> End([A paper or thesis ready to submit])
     RM{{research-roadmap<br/>workflow navigator}} -.where am I?.-> S1
     RM -.which skill next?.-> S5
-    RM -.what must only I decide?.-> S9
+    RM -.what must only I decide?.-> S10
 ```
 
-## The 12 Skills
+## The 13 Skills
 
-> **Nine core skills** + **two final-stage skills** + **one navigator** = **12 skills**. The same skill set can be used with Traditional Chinese, Simplified Chinese, English, and mixed-language research materials.
+> **Ten core skills** + **two final-stage skills** + **one navigator** = **13 skills**. The same skill set can be used with Traditional Chinese, Simplified Chinese, English, and mixed-language research materials.
 
 ### Core Skills
 
@@ -78,6 +79,7 @@ flowchart TD
 | [`style-tune`](skills/style-tune) | Voice calibration: learns from your previous writing, supports paragraph-level revision, and flags generic AI academic style. | Draft |
 | [`self-review`](skills/self-review) | Simulated review: methodology reviewer, field reviewer, devil's advocate, and editor-in-chief roles, plus integrity checks and issue triage. | Review |
 | [`defense-prep`](skills/defense-prep) | Defense preparation: presentation skeleton, layered hard questions, and response strategies, including English Q&A support. | Defense |
+| [`venue-fit`](skills/venue-fit) | Venue-fit checking: compares a manuscript with a target venue’s real author guidelines, producing must-fix, should-fix, and needs-check gaps without inventing journal requirements. | Submission |
 | [`ai-disclosure`](skills/ai-disclosure) | AI-use statement support: usage inventory, assistance vs. authorship distinction, institution- or journal-specific statements, and traceability notes. | Disclosure |
 
 ### Final-Stage Skills
@@ -203,7 +205,7 @@ This repository helps you state AI use honestly. It does not help with hiding AI
 
 Each skill has been tested on real research materials, including thesis references, literature-review drafts, teaching manuscripts, and workflow cases.
 
-Validation status has three levels: `Draft` (designed but not yet evidence-backed), `Beta` (usable but still being refined), and `Stable` (tested on real materials, with lessons written back into the skill). All 12 current skills are **Stable**. See [`VERIFICATION.md`](VERIFICATION.md) for the evidence chain, minimum evidence ledger, source map, and action map conventions.
+Validation status has three levels: `Draft` (designed but not yet evidence-backed), `Beta` (usable but still being refined), and `Stable` (tested on real materials, with lessons written back into the skill). 12 current skills are **Stable**, and `venue-fit` is **Beta**. See [`VERIFICATION.md`](VERIFICATION.md) for the evidence chain, minimum evidence ledger, source map, and action map conventions.
 
 | # | Case | Result |
 |---|---|---|
@@ -219,6 +221,7 @@ Validation status has three levels: `Draft` (designed but not yet evidence-backe
 | 010 | [abstract-bilingual on a thesis abstract](examples/2026-06-14-abstractbilingual-thesis.md) | Found keyword mismatch and misuse of statistically loaded language. |
 | 011 | [cite-format on a thesis bibliography](examples/2026-06-14-citeformat-thesis.md) | Confirmed that formatting must come after verification. |
 | 012 | [research-roadmap across the full workflow](examples/2026-06-14-researchroadmap-workflow.md) | Avoided becoming a process reciter by locating stages through actual outputs. |
+| 013 | [venue-fit on a thesis and Journal of Public Administration](examples/2026-06-18-venuefit-thesis-jpa.md) | Confirmed that venue-fit must not invent author guidelines and must first detect the thesis-to-journal genre gap. |
 
 ## Design Principles
 
@@ -226,7 +229,7 @@ Validation status has three levels: `Draft` (designed but not yet evidence-backe
 - **No fabrication:** missing or uncertain information must be marked, not invented.
 - **Use, test, revise:** rules are updated after running skills on real materials.
 - **Humanities and social sciences first:** built for interpretation-heavy research, not only lab-style workflows.
-- **Multilingual entry, single skill source:** README files may be localized, but the 12 skills remain one maintained set.
+- **Multilingual entry, single skill source:** README files may be localized, but the 13 skills remain one maintained set.
 - **Lightweight reference layer:** `VERIFICATION.md` summarizes tested evidence, `knowledge/` stores venue and Chinese academic-style reference cards, and `templates/` provides fill-in paper and defense skeletons.
 - **No heavy automation framework:** Boya does not adopt `_shared/` fragments, `manifest.yaml` loading, or long-running multi-agent orchestration unless a specific skill becomes too large to read directly.
 

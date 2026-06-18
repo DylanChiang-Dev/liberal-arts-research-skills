@@ -13,7 +13,7 @@
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#12-個の-skill)
+[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#13-個の-skill)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![日本語](https://img.shields.io/badge/日本語-Lightweight-e4002b?style=for-the-badge)](#)
 
@@ -21,7 +21,7 @@
 
 ---
 
-> このリポジトリは、人文・社会科学系の研究者が AI エージェントを研究補助として使うための skill 集です。12 個の skill は、研究テーマを絞る、引用文献を確認する、文献を読む、研究方法を設計する、論文の骨格を作る、文章を整える、自己レビューする、引用形式を整える、AI 利用を説明する、といった作業を担当します。
+> このリポジトリは、人文・社会科学系の研究者が AI エージェントを研究補助として使うための skill 集です。13 個の skill は、研究テーマを絞る、引用文献を確認する、文献を読む、研究方法を設計する、論文の骨格を作る、文章を整える、自己レビューする、引用形式を整える、AI 利用を説明する、といった作業を担当します。
 
 中心にある考え方は単純です。**AI に作業を任せても、研究判断は人間が持つ。** AI は文献を探す手がかりを出し、表を作り、質問を投げ、形式を整えることはできます。しかし、研究課題、方法、解釈、最終的な主張は研究者自身が決める必要があります。
 
@@ -39,9 +39,9 @@
 - **隠すのではなく説明する。** AI 利用は、必要に応じて正直に説明できる形で残します。
 - **一発自動生成ではない。** このリポジトリは「論文自動生成機」ではなく、人間が進行方向を決めるためのワークフローです。
 
-## 12 個の skill
+## 13 個の skill
 
-同じ 12 個の skill を、繁体字中国語、簡体字中国語、英語、日本語、または混在した研究資料に対して使えます。skill 本文は 1 セットだけを維持し、言語別 README は入口として用意しています。
+同じ 13 個の skill を、繁体字中国語、簡体字中国語、英語、日本語、または混在した研究資料に対して使えます。skill 本文は 1 セットだけを維持し、言語別 README は入口として用意しています。
 
 `VERIFICATION.md` には実測の証拠、`knowledge/` には venue 分類と中文学術文体の参考カード、`templates/` には論文構成と口頭試問スライドの穴埋め骨格があります。
 
@@ -55,6 +55,7 @@
 | [`style-tune`](skills/style-tune) | 自分の文体に合わせた段落単位の修正、AI っぽい学術文体の検出を行います。 | 初稿 |
 | [`self-review`](skills/self-review) | 方法論、分野、批判的読者、編集者の視点から原稿を模擬レビューします。 | 自己レビュー |
 | [`defense-prep`](skills/defense-prep) | 口頭試問、発表、質疑応答の準備を補助します。 | 発表・試問 |
+| [`venue-fit`](skills/venue-fit) | 投稿前に、完成稿を実際の投稿規程と照合し、must-fix／should-fix／確認待ちの差分を整理します。 | 投稿 |
 | [`ai-disclosure`](skills/ai-disclosure) | AI 利用の範囲を整理し、大学・授業・学会・投稿先の方針に合わせた説明文の作成を補助します。 | AI 利用説明 |
 | [`cite-format`](skills/cite-format) | APA / Chicago / MLA または指定テンプレートに合わせて参考文献形式を整えます。真偽確認は別作業です。 | 形式 |
 | [`abstract-bilingual`](skills/abstract-bilingual) | 中文・英文を中心に、完成稿から要旨とキーワードを整理します。数字や固有名詞は人間が確認します。 | 要旨 |
@@ -62,7 +63,7 @@
 
 ## インストール
 
-### 方法 1：agent に 12 個の skill をインストールしてもらう
+### 方法 1：agent に 13 個の skill をインストールしてもらう
 
 Claude Code、Codex、または CC Switch に次のように依頼します。
 
@@ -76,9 +77,9 @@ https://github.com/DylanChiang-Dev/boya から Boya の全 skill をインスト
 - Codex：全体 `~/.agents/skills/`；プロジェクト内 `.agents/skills/`；Codex の組み込み `$skill-installer` を使う場合は `$CODEX_HOME/skills/`（よくある既定値は `~/.codex/skills/`）に書き込むこともあります
 - CC Switch：全体 `~/.cc-switch/skills/`
 
-`citation-verify` など単一の skill 名を指定するのは、12 個すべてではなく 1 個だけ入れたい場合に限ります。
+`citation-verify` など単一の skill 名を指定するのは、13 個すべてではなく 1 個だけ入れたい場合に限ります。
 
-### 方法 2：12 個の skill を手動でコピーする
+### 方法 2：13 個の skill を手動でコピーする
 
 各 skill ディレクトリには `SKILL.md` が入っています。
 
@@ -171,7 +172,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 - `Beta`：利用可能ですが、境界条件や地域差をさらに確認する段階です。
 - `Stable`：実際の研究材料で検証し、見つかった失敗パターンを `SKILL.md` に反映済みです。
 
-現在の 12 個の skill はすべて **Stable** です。証拠の一覧、最小 evidence ledger、source map / action map の形式は [`VERIFICATION.md`](VERIFICATION.md) にまとめています。
+現在の 12 個の skill は **Stable**、`venue-fit` は **Beta** です。証拠の一覧、最小 evidence ledger、source map / action map の形式は [`VERIFICATION.md`](VERIFICATION.md) にまとめています。
 
 このリポジトリは軽量な skill 集として維持します。`_shared/` fragments、`manifest.yaml` による分割読み込み、長時間の multi-agent orchestrator は、現段階では採用しません。
 

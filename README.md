@@ -19,7 +19,7 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#十二個-skill)
+[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#十三個-skill)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-First-e4002b?style=for-the-badge)](#)
 
@@ -52,7 +52,7 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 
 ## 🗺️ 工作流地圖
 
-從一個念頭到一篇可以投出去的論文，十二個 skill 各守一段，`research-roadmap` 在最上層導航：
+從一個念頭到一篇可以投出去的論文，十三個 skill 各守一段，`research-roadmap` 在最上層導航：
 
 ```mermaid
 flowchart TD
@@ -64,16 +64,17 @@ flowchart TD
     S5 --> S6[寫初稿<br/>style-tune]
     S6 --> S7[自我審查<br/>self-review]
     S7 --> S8[定稿・口試<br/>defense-prep · cite-format · abstract-bilingual]
-    S8 --> S9[倫理揭露<br/>ai-disclosure]
-    S9 --> End([📄 可投出去的論文])
+    S8 --> S9[投稿對標<br/>venue-fit]
+    S9 --> S10[倫理揭露<br/>ai-disclosure]
+    S10 --> End([📄 可投出去的論文])
     RM{{research-roadmap<br/>全程導航書脊}} -.隨時定位你在哪.-> S1
     RM -.該喚哪個 skill.-> S5
-    RM -.哪些只有你能決定.-> S9
+    RM -.哪些只有你能決定.-> S10
 ```
 
-## 📦 十二個 skill
+## 📦 十三個 skill
 
-> **九個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十二個**，皆 `0.0.2`、皆以作者真實研究材料實測打磨。
+> **十個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十三個**；其中十二個為 `0.0.2` Stable，`venue-fit` 已真跑升 Beta。
 
 ### 核心 · 一階段一個
 
@@ -87,6 +88,7 @@ flowchart TD
 | [`style-tune`](skills/style-tune) | 聲音校準：用舊文讓 AI 學你的文風、段落級潤稿（守整篇代寫紅線）、中文學術 AI 腔識別清單 | 初稿 |
 | [`self-review`](skills/self-review) | 自我審查（**模擬審查**）：一桌審稿人（方法論／領域／魔鬼代言人／主編）輪審＋誠信自查＋意見分級（必改／可辯／誤讀） | 自審 |
 | [`defense-prep`](skills/defense-prep) | 口試準備：論文 → 簡報骨架、分層出難題（澄清／方法／理論／貢獻／陷阱）、答詢策略（含英文） | 口試 |
+| [`venue-fit`](skills/venue-fit) | 投稿對標：用定稿對上目標 venue 的真實作者須知，列出 must-fix／should-fix／待補查證；不編期刊規範、不代決定投哪裡 | 投稿 |
 | [`ai-disclosure`](skills/ai-disclosure) | AI 使用揭露：盤點使用 → 抄襲／代寫／輔助三分法 → 按目標機構格式生成誠實具體聲明 → 留痕自證 | 揭露 |
 
 ### 收尾 · 定稿階段
@@ -176,7 +178,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 每個 skill 都拿**真實研究材料**跑過、把暴露的坑寫回規則——多數用在作者自己那本碩士論文上，是一條工作流全鏈的真實示範。
 
-驗證狀態採三層：`Draft`（草稿，尚未形成證據鏈）、`Beta`（可用但仍在磨）、`Stable`（已用真實材料跑過並寫回規則）。目前 12 個 skill 均為 **Stable**；證據鏈、最小 evidence ledger、source map／action map 規格見 [`VERIFICATION.md`](VERIFICATION.md)。
+驗證狀態採三層：`Draft`（草稿，尚未形成證據鏈）、`Beta`（可用但仍在磨）、`Stable`（已用真實材料跑過並寫回規則）。目前 12 個 skill 為 **Stable**，`venue-fit` 為 **Beta**；證據鏈、最小 evidence ledger、source map／action map 規格見 [`VERIFICATION.md`](VERIFICATION.md)。
 
 | # | 案例 | 一句話戰果 |
 |---|---|---|
@@ -192,6 +194,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 010 | [abstract-bilingual 生碩論中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) | 抓到「官方關鍵詞中英本身不對齊／『顯著』是統計詞別照搬」 |
 | 011 | [cite-format 排碩論參考文獻](examples/2026-06-14-citeformat-thesis.md) | 坐實「先驗後排——未查核清單＝錯資料的漂亮包裝」 |
 | 012 | [research-roadmap 導航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按線性順序 |
+| 013 | [venue-fit 對標作者碩論與《公共行政學報》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐實「不編作者須知」與「學位論文轉期刊先判文稿類型」，venue-fit 升 Beta |
 
 ## 🧱 設計原則
 

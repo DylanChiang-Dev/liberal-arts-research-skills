@@ -11,9 +11,9 @@
 | Beta | 可用但仍在磨 | 已有實測或局部案例，但邊界條件、地區語境或資料類型仍需要更多回歸 |
 | Draft | 草稿 | 只有設計或少量試跑，尚未形成可依賴的實測證據鏈 |
 
-目前 12 個 Boya skills 均列為 **Stable**：不是因為「不會錯」，而是因為每個 skill 都至少經過一輪真實材料實測，並把失敗模式寫回規則。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
+目前 12 個 Boya skills 列為 **Stable**，`venue-fit` 列為 **Beta**：不是因為「不會錯」，而是因為 Stable skill 至少經過一輪真實材料實測，並把失敗模式寫回規則；`venue-fit` 已有一份真實投稿對標案例，但仍需要更多學科、語種與期刊類型案例才能升 Stable。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
 
-- **venue-fit**（0.3.0 新增）：目前 **Draft**——僅有設計與 SKILL.md，尚未拿真實投稿材料跑過。升 Beta 條件：在 `examples/` 補 >=1 篇實跑真錄並校準 `evals/venue-fit.md`。
+- **venue-fit**（0.3.0 新增）：目前 **Beta**——已用作者碩論對標《公共行政學報》真實投稿規範，見 `examples/2026-06-18-venuefit-thesis-jpa.md`。升 Stable 條件：再補至少 1 個不同語種或不同學科投稿案例，並確認「不猜作者須知」「學位論文轉期刊先判文稿類型」規則可重複成立。
 
 ## Evidence Ledger 最小格式
 
@@ -81,3 +81,4 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | abstract-bilingual | 0.0.2 | 2026-06-14 | 碩論中英摘要 | 關鍵詞中英不對齊、「顯著」當統計詞照搬 | examples/2026-06-14-abstractbilingual-thesis.md |
 | cite-format | 0.0.2 | 2026-06-14 | 碩論參考文獻 | 先排後驗＝錯資料的漂亮包裝 | examples/2026-06-14-citeformat-thesis.md |
 | research-roadmap | 0.0.2 | 2026-06-14 | 完整研究工作流 | 退化成目錄朗讀機 | examples/2026-06-14-researchroadmap-workflow.md |
+| venue-fit | 0.0.1 Beta | 2026-06-18 | 作者碩論 ×《公共行政學報》投稿規範 | 不可編作者須知、學位論文轉期刊需先判文稿類型 | examples/2026-06-18-venuefit-thesis-jpa.md |
