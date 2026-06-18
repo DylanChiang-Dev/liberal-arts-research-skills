@@ -97,9 +97,25 @@ flowchart TD
 
 ## 安装
 
-### 方式一：手动复制整套 skills（推荐、最稳）
+### 方式一：请 agent 自动安装整套 Boya（推荐）
 
-Codex 读取 `.agents/skills` 与 `~/.agents/skills`；Claude Code 读取 `.claude/skills` 与 `~/.claude/skills`。每个 skill 目录只要包含 `SKILL.md` 就能被识别。
+打开 Claude Code、Codex 或 CC Switch，把这句话贴进去：
+
+```text
+帮我从 https://github.com/DylanChiang-Dev/boya 安装全部 Boya skills，不要只安装 citation-verify。请先判断我目前使用的是 Claude Code、Codex 还是 CC Switch，说明会写入哪些 skills 目录，等我确认后再执行。
+```
+
+常见目标路径：
+
+- Claude Code：全局 `~/.claude/skills/`；项目内 `.claude/skills/`
+- Codex：全局 `~/.agents/skills/`；项目内 `.agents/skills/`；如果使用 Codex 内置 `$skill-installer`，也可能写入 `$CODEX_HOME/skills/`（默认常见为 `~/.codex/skills/`）
+- CC Switch：全局 `~/.cc-switch/skills/`
+
+只想安装单一技能时，才把“全部 Boya skills”改成具体 skill 名，例如 `citation-verify`。
+
+### 方式二：手动复制整套 skills
+
+每个 skill 目录只要包含 `SKILL.md` 就能被识别。
 
 **Codex 全局安装（所有项目可用）**
 
@@ -108,6 +124,13 @@ git clone https://github.com/DylanChiang-Dev/boya.git
 
 mkdir -p ~/.agents/skills
 cp -r boya/skills/* ~/.agents/skills/
+```
+
+如果你的 Codex 明确使用 `$CODEX_HOME/skills/` 加载技能，改用：
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -r boya/skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 **Codex 项目安装（只给当前项目用）**
@@ -135,15 +158,12 @@ cp -r boya/skills/* .claude/skills/
 
 装好后在 Claude Code 里直接用自然语言触发，例如：“帮我核查这份参考文献的真伪”。
 
-### 方式二：请 agent 协助安装（不熟终端机时）
+**CC Switch 全局安装**
 
-如果你的 Claude Code / Codex 环境支持从 GitHub 读取并写入本机 skills 目录，可以把这句话贴给它：
-
-```text
-帮我从 https://github.com/DylanChiang-Dev/boya 安装全部 Boya skills 到全局技能目录；安装前先说明会写入哪些路径。
+```bash
+mkdir -p ~/.cc-switch/skills
+cp -r boya/skills/* ~/.cc-switch/skills/
 ```
-
-只想安装单一技能时，才把“全部 Boya skills”改成具体 skill 名，例如 `citation-verify`。
 
 ## 中国大陆高校使用注意
 

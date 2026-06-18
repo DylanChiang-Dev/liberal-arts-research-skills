@@ -62,9 +62,25 @@
 
 ## インストール
 
-### 方法 1：12 個の skill を手動でコピーする
+### 方法 1：agent に 12 個の skill をインストールしてもらう
 
-Codex は `.agents/skills` と `~/.agents/skills` を読みます。Claude Code は `.claude/skills` と `~/.claude/skills` を読みます。各 skill ディレクトリには `SKILL.md` が入っています。
+Claude Code、Codex、または CC Switch に次のように依頼します。
+
+```text
+https://github.com/DylanChiang-Dev/boya から Boya の全 skill をインストールしてください。citation-verify だけをインストールしないでください。まず Claude Code、Codex、CC Switch のどれを使っているかを判断し、書き込む skills ディレクトリを説明して、確認を待ってから実行してください。
+```
+
+よく使う保存先：
+
+- Claude Code：全体 `~/.claude/skills/`；プロジェクト内 `.claude/skills/`
+- Codex：全体 `~/.agents/skills/`；プロジェクト内 `.agents/skills/`；Codex の組み込み `$skill-installer` を使う場合は `$CODEX_HOME/skills/`（よくある既定値は `~/.codex/skills/`）に書き込むこともあります
+- CC Switch：全体 `~/.cc-switch/skills/`
+
+`citation-verify` など単一の skill 名を指定するのは、12 個すべてではなく 1 個だけ入れたい場合に限ります。
+
+### 方法 2：12 個の skill を手動でコピーする
+
+各 skill ディレクトリには `SKILL.md` が入っています。
 
 **Codex 全体インストール**
 
@@ -73,6 +89,13 @@ git clone https://github.com/DylanChiang-Dev/boya.git
 
 mkdir -p ~/.agents/skills
 cp -r boya/skills/* ~/.agents/skills/
+```
+
+Codex が `$CODEX_HOME/skills/` から skill を読み込む設定だと分かっている場合は、次を使います。
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -r boya/skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 **Codex プロジェクト内インストール**
@@ -98,15 +121,12 @@ cp -r boya/skills/* .claude/skills/
 
 インストール後は、`$citation-verify` のように明示的に呼び出すか、「この参考文献が実在するか確認して」のように自然言語で依頼できます。
 
-### 方法 2：agent にインストールを依頼する
+**CC Switch 全体インストール**
 
-Claude Code または Codex が GitHub を読み、本機の skills ディレクトリに書き込める環境なら、次のように依頼できます。
-
-```text
-https://github.com/DylanChiang-Dev/boya から Boya の全 skill をグローバル skills ディレクトリにインストールしてください。実行前に書き込むパスを説明してください。
+```bash
+mkdir -p ~/.cc-switch/skills
+cp -r boya/skills/* ~/.cc-switch/skills/
 ```
-
-`citation-verify` など単一の skill 名を指定するのは、12 個すべてではなく 1 個だけ入れたい場合に限ります。
 
 ## 日本語環境で使うときの注意
 

@@ -95,9 +95,25 @@ flowchart TD
 
 ## Installation
 
-### Option 1: Manually Copy the Full Skill Set
+### Option 1: Ask an Agent to Install All Boya Skills
 
-Codex reads skills from `.agents/skills` and `~/.agents/skills`. Claude Code reads skills from `.claude/skills` and `~/.claude/skills`. Each skill directory only needs a `SKILL.md` file.
+Open Claude Code, Codex, or CC Switch and paste:
+
+```text
+Install all Boya skills from https://github.com/DylanChiang-Dev/boya, not only citation-verify. First detect whether I am using Claude Code, Codex, or CC Switch, tell me which skills directories you will write to, and wait for my confirmation before making changes.
+```
+
+Common target paths:
+
+- Claude Code: global `~/.claude/skills/`; project-local `.claude/skills/`
+- Codex: global `~/.agents/skills/`; project-local `.agents/skills/`; Codex's built-in `$skill-installer` may instead write to `$CODEX_HOME/skills/` (commonly `~/.codex/skills/`)
+- CC Switch: global `~/.cc-switch/skills/`
+
+Use a single skill name such as `citation-verify` only when you intentionally want to install one skill instead of the full set.
+
+### Option 2: Manually Copy the Full Skill Set
+
+Each skill directory only needs a `SKILL.md` file.
 
 **Codex global install**
 
@@ -106,6 +122,13 @@ git clone https://github.com/DylanChiang-Dev/boya.git
 
 mkdir -p ~/.agents/skills
 cp -r boya/skills/* ~/.agents/skills/
+```
+
+If your Codex setup explicitly loads skills from `$CODEX_HOME/skills/`, use:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -r boya/skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 **Codex project-local install**
@@ -133,15 +156,12 @@ cp -r boya/skills/* .claude/skills/
 
 After installation, use natural language in Claude Code, for example: "Check whether these references are real."
 
-### Option 2: Ask an Agent to Help
+**CC Switch global install**
 
-If your Claude Code or Codex environment can read GitHub and write to your local skills directories, paste:
-
-```text
-Install all Boya skills from https://github.com/DylanChiang-Dev/boya into my global skills directory. Before installing, tell me which paths you will write to.
+```bash
+mkdir -p ~/.cc-switch/skills
+cp -r boya/skills/* ~/.cc-switch/skills/
 ```
-
-Use a single skill name such as `citation-verify` only when you intentionally want to install one skill instead of the full set.
 
 ## Notes for International Use
 
