@@ -18,6 +18,7 @@
 | 「寫摘要／生成中英文摘要／abstract 怎麼寫／做關鍵詞」 | abstract-bilingual | 摘要 | 摘要是否忠實於定稿 |
 | 「我要寫論文，從頭帶我走／我現在該做什麼／研究流程怎麼跑／下一步用哪個 skill」 | research-roadmap | 導航 | 每一關的過關判斷 |
 | 「要論文結構模板／骨架／簡報範本」 | templates/ | 工具 | 結構選擇仍是你的 |
+| 「投稿前對標目標刊／這篇夠不夠 SSCI/TSSCI/CSSCI／作者須知對上了嗎／投出去前還差什麼」 | venue-fit | 投稿 | 投不投這刊、差距補不補（真實規範須你查、不可編） |
 | 「投稿去哪／期刊分級／venue」 | knowledge/venues.md | 工具 | 真實分級數據須你填，不可編造 |
 | 「這些 skill 實測過嗎／證據」 | VERIFICATION.md | 工具 | — |
 
