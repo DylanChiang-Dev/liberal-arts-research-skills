@@ -27,6 +27,8 @@
 
 简体中文与中国大陆高校使用说明见 [README.zh-CN.md](README.zh-CN.md)。English and Japanese introductions are available in [README.en.md](README.en.md) and [README.ja.md](README.ja.md).
 
+完整使用手冊見 [GUIDE.md](GUIDE.md)：安裝後從哪裡開始、不同研究階段該用哪個 skill、templates / knowledge / evals 怎麼配合。
+
 一句話講清楚這個倉庫在做什麼：**把指導教授腦子裡那種「看三篇文獻就知道這題能不能做」的判斷，盡量拆成明白的規則與提問，寫成你隨時叫得動的流程。** 它縮小資訊差，但不替你做研究——
 
 ## 🧭 核心信念
