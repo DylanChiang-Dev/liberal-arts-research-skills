@@ -16,6 +16,7 @@
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#十二個-skill)
+[![version](https://img.shields.io/badge/version-0.1.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-First-e4002b?style=for-the-badge)](#)
 
 </div>
@@ -177,7 +178,7 @@ cp -r boya/skills/* .claude/skills/
 | `0.X.0` | 新 skill 發布或工作流結構調整，中號 +1 |
 | `1.0.0` | 全套 skill 穩定版 |
 
-每個版本打 git tag，CHANGELOG 記在 [`MEMORY.md`](MEMORY.md)。
+每個版本打 git tag，CHANGELOG 記在 [`MEMORY.md`](MEMORY.md#changelog)。
 
 ## 📄 授權與致謝
 
