@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 人文・社会科学のための AI 研究スキル集
+# Boya（博雅）· 人文・社会科学のための AI 研究スキル集
 
 ### 文系研究者の AI 研究ワークフロー
 
@@ -10,8 +10,8 @@
 
 <br/>
 
-[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/stargazers)
-[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/network/members)
+[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
+[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#12-個の-skill)
 [![日本語](https://img.shields.io/badge/日本語-Lightweight-e4002b?style=for-the-badge)](#)
@@ -64,29 +64,29 @@
 Codex は `.agents/skills` と `~/.agents/skills` を読みます。各 skill ディレクトリには `SKILL.md` が入っています。
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全体インストール
 mkdir -p ~/.agents/skills
-cp -r liberal-arts-research-skills/skills/* ~/.agents/skills/
+cp -r boya/skills/* ~/.agents/skills/
 
 # または現在のプロジェクトだけにインストール
 mkdir -p .agents/skills
-cp -r liberal-arts-research-skills/skills/* .agents/skills/
+cp -r boya/skills/* .agents/skills/
 ```
 
 ### Claude Code に手動インストール
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全体インストール
 mkdir -p ~/.claude/skills
-cp -r liberal-arts-research-skills/skills/* ~/.claude/skills/
+cp -r boya/skills/* ~/.claude/skills/
 
 # または現在のプロジェクトだけにインストール
 mkdir -p .claude/skills
-cp -r liberal-arts-research-skills/skills/* .claude/skills/
+cp -r boya/skills/* .claude/skills/
 ```
 
 インストール後は、`$citation-verify` のように明示的に呼び出すか、「この参考文献が実在するか確認して」のように自然言語で依頼できます。

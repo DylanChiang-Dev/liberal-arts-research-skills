@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 人文社科 AI 研究技能庫
+# 博雅 · 人文社科 AI 研究技能庫
 
 ### 文組生的 AI 研究工作流
 
@@ -12,8 +12,8 @@
 
 <br/>
 
-[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/stargazers)
-[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/network/members)
+[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
+[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#十二個-skill)
 [![繁體中文](https://img.shields.io/badge/繁體中文-First-e4002b?style=for-the-badge)](#)
@@ -96,7 +96,7 @@ flowchart TD
 打開 Claude Code 或 Codex，把這句話貼進去：
 
 ```
-幫我從 https://github.com/DylanChiang-Dev/liberal-arts-research-skills 安裝 citation-verify 技能
+幫我從 https://github.com/DylanChiang-Dev/boya 安裝 citation-verify 技能
 ```
 
 它會自己下載倉庫、把技能檔放到正確位置、回報裝了什麼。預設裝到當前專案；想讓所有專案都能用，句尾加「**到全域技能目錄**」。新裝的 skill 通常在下次啟動 Claude Code 或 Codex 時生效。
@@ -108,15 +108,15 @@ flowchart TD
 Codex 讀取 `.agents/skills` 與 `~/.agents/skills`。每個 skill 目錄只要包含 `SKILL.md` 就能被辨識。
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全域安裝（所有專案可用）
 mkdir -p ~/.agents/skills
-cp -r liberal-arts-research-skills/skills/* ~/.agents/skills/
+cp -r boya/skills/* ~/.agents/skills/
 
 # 或只裝到當前專案
 mkdir -p .agents/skills
-cp -r liberal-arts-research-skills/skills/* .agents/skills/
+cp -r boya/skills/* .agents/skills/
 ```
 
 裝好後在 Codex 裡可用 `$citation-verify` 這類明確呼叫，也可以直接用自然語言觸發，例如：「幫我查核這份參考文獻的真偽」。
@@ -124,15 +124,15 @@ cp -r liberal-arts-research-skills/skills/* .agents/skills/
 ### 方式三：手動複製到 Claude Code（會用終端機的話）
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全域安裝（所有專案可用）
 mkdir -p ~/.claude/skills
-cp -r liberal-arts-research-skills/skills/* ~/.claude/skills/
+cp -r boya/skills/* ~/.claude/skills/
 
 # 或只裝到當前專案
 mkdir -p .claude/skills
-cp -r liberal-arts-research-skills/skills/* .claude/skills/
+cp -r boya/skills/* .claude/skills/
 ```
 
 裝好後在 Claude Code 裡直接用自然語言觸發，例如：「幫我查核這份參考文獻的真偽」。
@@ -167,7 +167,7 @@ cp -r liberal-arts-research-skills/skills/* .claude/skills/
 
 如果這個倉庫幫到你，按顆星——讓更多卡在論文裡、身邊沒有人可商量的文組生看到它。
 
-[![Star History Chart](https://api.star-history.com/svg?repos=DylanChiang-Dev/liberal-arts-research-skills&type=Date)](https://star-history.com/#DylanChiang-Dev/liberal-arts-research-skills&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=DylanChiang-Dev/boya&type=Date)](https://star-history.com/#DylanChiang-Dev/boya&Date)
 
 ## 🏷️ 版本策略
 

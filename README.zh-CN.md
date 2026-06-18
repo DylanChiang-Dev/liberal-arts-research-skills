@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 人文社科 AI 研究技能库
+# 博雅 · 人文社科 AI 研究技能库
 
 ### 文科生的 AI 研究工作流
 
@@ -12,8 +12,8 @@
 
 <br/>
 
-[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/stargazers)
-[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/network/members)
+[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
+[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#十二个-skill)
 [![简体中文](https://img.shields.io/badge/简体中文-Ready-e4002b?style=for-the-badge)](#)
@@ -101,7 +101,7 @@ flowchart TD
 打开 Claude Code 或 Codex，把这句话贴进去：
 
 ```text
-帮我从 https://github.com/DylanChiang-Dev/liberal-arts-research-skills 安装 citation-verify 技能
+帮我从 https://github.com/DylanChiang-Dev/boya 安装 citation-verify 技能
 ```
 
 它会下载仓库、把 skill 文件放到合适位置、回报装了什么。想一次安装全部，把 `citation-verify` 换成“所有技能”。
@@ -111,15 +111,15 @@ flowchart TD
 Codex 读取 `.agents/skills` 与 `~/.agents/skills`。每个 skill 目录只要包含 `SKILL.md` 就能被识别。
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全局安装（所有项目可用）
 mkdir -p ~/.agents/skills
-cp -r liberal-arts-research-skills/skills/* ~/.agents/skills/
+cp -r boya/skills/* ~/.agents/skills/
 
 # 或只安装到当前项目
 mkdir -p .agents/skills
-cp -r liberal-arts-research-skills/skills/* .agents/skills/
+cp -r boya/skills/* .agents/skills/
 ```
 
 装好后在 Codex 里可用 `$citation-verify` 这类明确调用，也可以直接用自然语言触发，例如：“帮我核查这份参考文献的真伪”。
@@ -127,15 +127,15 @@ cp -r liberal-arts-research-skills/skills/* .agents/skills/
 ### 方式三：手动复制到 Claude Code
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # 全局安装（所有项目可用）
 mkdir -p ~/.claude/skills
-cp -r liberal-arts-research-skills/skills/* ~/.claude/skills/
+cp -r boya/skills/* ~/.claude/skills/
 
 # 或只安装到当前项目
 mkdir -p .claude/skills
-cp -r liberal-arts-research-skills/skills/* .claude/skills/
+cp -r boya/skills/* .claude/skills/
 ```
 
 装好后在 Claude Code 里直接用自然语言触发，例如：“帮我核查这份参考文献的真伪”。

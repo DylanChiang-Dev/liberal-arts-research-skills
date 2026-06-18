@@ -2,16 +2,16 @@ Languages: [繁體中文](README.md) | [简体中文](README.zh-CN.md) | [Englis
 
 <div align="center">
 
-# AI Research Skills for the Humanities and Social Sciences
+# Boya · AI Research Skills for Liberal Arts Researchers
 
-### Liberal Arts Research Skills
+### The Liberal-Arts AI Research Workflow
 
 **A Claude Code / Codex skill collection for humanities and social-science researchers who do not write code: from topic refinement and source checking to literature review, research design, drafting, self-review, and defense preparation.**
 
 <br/>
 
-[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/stargazers)
-[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/liberal-arts-research-skills?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/liberal-arts-research-skills/network/members)
+[![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
+[![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-12-7e57c2?style=for-the-badge)](#the-12-skills)
 [![English](https://img.shields.io/badge/English-Ready-e4002b?style=for-the-badge)](#)
@@ -99,7 +99,7 @@ flowchart TD
 Open Claude Code or Codex and paste:
 
 ```text
-Install the citation-verify skill from https://github.com/DylanChiang-Dev/liberal-arts-research-skills
+Install the citation-verify skill from https://github.com/DylanChiang-Dev/boya
 ```
 
 To install all skills, replace `citation-verify` with `all skills`.
@@ -109,15 +109,15 @@ To install all skills, replace `citation-verify` with `all skills`.
 Codex reads skills from `.agents/skills` and `~/.agents/skills`. Each skill directory only needs a `SKILL.md` file.
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # Global install
 mkdir -p ~/.agents/skills
-cp -r liberal-arts-research-skills/skills/* ~/.agents/skills/
+cp -r boya/skills/* ~/.agents/skills/
 
 # Or project-local install
 mkdir -p .agents/skills
-cp -r liberal-arts-research-skills/skills/* .agents/skills/
+cp -r boya/skills/* .agents/skills/
 ```
 
 After installation, call a skill explicitly, such as `$citation-verify`, or use natural language such as: "Check whether these references are real."
@@ -125,15 +125,15 @@ After installation, call a skill explicitly, such as `$citation-verify`, or use 
 ### Option 3: Manual Install for Claude Code
 
 ```bash
-git clone https://github.com/DylanChiang-Dev/liberal-arts-research-skills.git
+git clone https://github.com/DylanChiang-Dev/boya.git
 
 # Global install
 mkdir -p ~/.claude/skills
-cp -r liberal-arts-research-skills/skills/* ~/.claude/skills/
+cp -r boya/skills/* ~/.claude/skills/
 
 # Or project-local install
 mkdir -p .claude/skills
-cp -r liberal-arts-research-skills/skills/* .claude/skills/
+cp -r boya/skills/* .claude/skills/
 ```
 
 After installation, use natural language in Claude Code, for example: "Check whether these references are real."
