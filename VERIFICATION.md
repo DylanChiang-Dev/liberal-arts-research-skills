@@ -87,7 +87,7 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | venue-fit | 0.0.1 Beta | 2026-06-18 | 作者碩論 ×《公共行政學報》投稿規範 | 不可編作者須知、學位論文轉期刊需先判文稿類型 | examples/2026-06-18-venuefit-thesis-jpa.md |
 | work-trace-table | convention/template | 2026-06-19 | 碩論 47 筆引用查核＋既有 self-review／ai-disclosure 真錄 | DOI 貼錯不可落 🗑、AI 審查意見先標 🤖、揭露須據表寫具體分工 | examples/2026-06-19-work-trace-table-case.md |
 | outline-builder | 0.0.3 | 2026-06-20 | 碩論骨架與文風既有真錄節錄 | 逆向體檢須三動作齊全；節錄級材料不可偽裝成逐字全文體檢 | examples/2026-06-20-outline-reverse-checkup-case.md |
-| framework-build | 0.X.0 Draft | 2026-06-21 | 日台半導體經濟安全（JASM）課題、文獻已過 lit-matrix | 框架沙拉、紅海誤選、假地基、兩張皮 | examples/2026-06-21-framework-jasm.md |
+| framework-build | 0.4.0 Draft | 2026-06-21 | 日台半導體經濟安全（JASM）課題、文獻已過 lit-matrix | 框架沙拉、紅海誤選、假地基、兩張皮 | examples/2026-06-21-framework-jasm.md |
 | topic-refine | 0.0.3 | 2026-06-21 | 兩岸關係題＋STORM 五透鏡發散 | 利益透鏡易發無源事實、透鏡撐爆清單、懷疑者最救命 | examples/2026-06-21-topicrefine-storm-lens.md |
 | self-review | 0.0.3 | 2026-06-21 | 教學章稿審查報告＋收尾自評 | 信心分數誘導裝權威、偏誤須分合理留白／假嚴格、缺席視角接文稿類型表 | examples/2026-06-21-selfreview-storm-lens.md |
 | lit-matrix | 0.0.3 | 2026-06-21 | 碩論 5 篇＋盲點缺口框法 | 盲點易滑成「首創」腦補、缺口要扣 RQ 需要的面向 | examples/2026-06-21-litmatrix-storm-lens.md |

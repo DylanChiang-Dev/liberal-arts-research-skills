@@ -10,11 +10,12 @@
 - `lit-matrix` 0.0.2→0.0.3：第 4 步缺口處加**盲點框法**（RQ 需要×這批未覆蓋＝缺口候選），硬防「這批沒人碰＝首創」腦補。
 - 配套：三份 eval 補 MUST/MUST NOT、三篇 `examples/2026-06-21-*-storm-lens.md` 實跑真錄、`VERIFICATION.md` 狀態表＋Evidence Ledger 各補一行。ROUTER 觸發語不變、不新增路由。
 
-### v0.3.0（2026-06-21）framework-build 理論框架定錨
+### v0.4.0（2026-06-21）framework-build 理論框架定錨
 
+- 版本號依 AGENTS.md 規則升為 v0.4.0：`framework-build` 是新增 skill，屬 `0.X.0` 發布；`v0.3.0` 保留給投稿延伸與 `venue-fit` 線。
 - 新增 `framework-build`（理論框架定錨）Draft：插在 `lit-matrix` 與 `method-design` 之間，從文獻地圖攤候選框架、標庫存支撐、推薦分層，並在主框架選擇處硬 GATE 交回研究者拍板。
 - 新增 `evals/framework-build.md`、`templates/framework-anchor.md`、`examples/2026-06-21-framework-jasm.md`，用日台半導體經濟安全（JASM）課題固化「不堆框架沙拉／不編承重文獻／避免紅海誤選／預防兩張皮」四個坑。
-- `research-roadmap` 新增階段 4「理論框架定錨」並重編後續階段；ROUTER、GUIDE、四語 README、VERIFICATION 與 `lit-matrix`／`method-design`／`outline-builder` 交叉指引同步接入。四語 README skill 計數 13→14，版本 badge 升 0.3.0。
+- `research-roadmap` 新增階段 4「理論框架定錨」並重編後續階段；ROUTER、GUIDE、四語 README、VERIFICATION 與 `lit-matrix`／`method-design`／`outline-builder` 交叉指引同步接入。四語 README skill 計數 13→14，版本 badge 升 0.4.0。
 
 ### main（2026-06-20）outline-builder 逆向體檢模式
 
@@ -24,7 +25,7 @@
 
 ### main（2026-06-19）工作痕跡表整合
 
-- 新增 `CONVENTIONS.md §8` 與 `templates/work-trace-table.md`，把「工作痕跡表」定義為跨三個誠信 skill 的統一留痕格式。
+- 新增 `CONVENTIONS.md §9` 與 `templates/work-trace-table.md`，把「工作痕跡表」定義為跨三個誠信 skill 的統一留痕格式。
 - `citation-verify`／`self-review`／`ai-disclosure` 接入痕跡表：查核狀態寫入 ✅/❓、AI 審查意見先標 🤖、揭露聲明優先據表盤點。
 - 新增 `examples/2026-06-19-work-trace-table-case.md` 與三份 eval 斷言，固定邊界：查無不落 🗑，轉 🧍 是作者動作，揭露不得寫空話。
 
