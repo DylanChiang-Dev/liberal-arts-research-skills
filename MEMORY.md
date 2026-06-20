@@ -2,6 +2,12 @@
 
 ## CHANGELOG
 
+### main（2026-06-19）工作痕跡表整合
+
+- 新增 `CONVENTIONS.md §8` 與 `templates/work-trace-table.md`，把「工作痕跡表」定義為跨三個誠信 skill 的統一留痕格式。
+- `citation-verify`／`self-review`／`ai-disclosure` 接入痕跡表：查核狀態寫入 ✅/❓、AI 審查意見先標 🤖、揭露聲明優先據表盤點。
+- 新增 `examples/2026-06-19-work-trace-table-case.md` 與三份 eval 斷言，固定邊界：查無不落 🗑，轉 🧍 是作者動作，揭露不得寫空話。
+
 ### main（2026-06-18）venue-fit 真跑升 Beta
 
 - `venue-fit` 用作者碩士論文《生成式人工智慧使用行為之研究：以立法委員助理為例》對標《公共行政學報》真實投稿規範，新增 `examples/2026-06-18-venuefit-thesis-jpa.md`。
