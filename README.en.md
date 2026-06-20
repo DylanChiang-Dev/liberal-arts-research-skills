@@ -14,7 +14,7 @@ Languages: [繁體中文](README.md) | [简体中文](README.zh-CN.md) | [Englis
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-14-7e57c2?style=for-the-badge)](#the-14-skills)
-[![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
+[![version](https://img.shields.io/badge/version-0.3.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![English](https://img.shields.io/badge/English-Ready-e4002b?style=for-the-badge)](#)
 
 </div>

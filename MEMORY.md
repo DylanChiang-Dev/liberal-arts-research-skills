@@ -2,6 +2,12 @@
 
 ## CHANGELOG
 
+### v0.3.0（2026-06-21）framework-build 理論框架定錨
+
+- 新增 `framework-build`（理論框架定錨）Draft：插在 `lit-matrix` 與 `method-design` 之間，從文獻地圖攤候選框架、標庫存支撐、推薦分層，並在主框架選擇處硬 GATE 交回研究者拍板。
+- 新增 `evals/framework-build.md`、`templates/framework-anchor.md`、`examples/2026-06-21-framework-jasm.md`，用日台半導體經濟安全（JASM）課題固化「不堆框架沙拉／不編承重文獻／避免紅海誤選／預防兩張皮」四個坑。
+- `research-roadmap` 新增階段 4「理論框架定錨」並重編後續階段；ROUTER、GUIDE、四語 README、VERIFICATION 與 `lit-matrix`／`method-design`／`outline-builder` 交叉指引同步接入。四語 README skill 計數 13→14，版本 badge 升 0.3.0。
+
 ### main（2026-06-20）outline-builder 逆向體檢模式
 
 - `outline-builder` 新增「逆向體檢」模式：拿成稿反推骨架，逐段套一段一意／首句點題／句關係／名詞術語清單，再扣回主線。
