@@ -2,6 +2,12 @@
 
 ## CHANGELOG
 
+### main（2026-06-20）outline-builder 逆向體檢模式
+
+- `outline-builder` 新增「逆向體檢」模式：拿成稿反推骨架，逐段套一段一意／首句點題／句關係／名詞術語清單，再扣回主線。
+- `style-tune`／`self-review` 補交叉指引：讀起來鬆散或段落層級讀不順時，先回 `outline-builder` 跑逆向體檢。
+- 新增 `examples/2026-06-20-outline-reverse-checkup-case.md` 與 `evals/outline-builder.md` 斷言；借自 `Master-cai/Research-Paper-Writing-Skills` 的逆向大綱＋段落流暢想法，但全部自行重寫，並固定「只診斷不代筆」「節錄級不可偽裝全文」邊界。
+
 ### main（2026-06-19）工作痕跡表整合
 
 - 新增 `CONVENTIONS.md §8` 與 `templates/work-trace-table.md`，把「工作痕跡表」定義為跨三個誠信 skill 的統一留痕格式。

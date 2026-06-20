@@ -83,3 +83,4 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | research-roadmap | 0.0.2 | 2026-06-14 | 完整研究工作流 | 退化成目錄朗讀機 | examples/2026-06-14-researchroadmap-workflow.md |
 | venue-fit | 0.0.1 Beta | 2026-06-18 | 作者碩論 ×《公共行政學報》投稿規範 | 不可編作者須知、學位論文轉期刊需先判文稿類型 | examples/2026-06-18-venuefit-thesis-jpa.md |
 | work-trace-table | convention/template | 2026-06-19 | 碩論 47 筆引用查核＋既有 self-review／ai-disclosure 真錄 | DOI 貼錯不可落 🗑、AI 審查意見先標 🤖、揭露須據表寫具體分工 | examples/2026-06-19-work-trace-table-case.md |
+| outline-builder | 0.0.3 | 2026-06-20 | 碩論骨架與文風既有真錄節錄 | 逆向體檢須三動作齊全；節錄級材料不可偽裝成逐字全文體檢 | examples/2026-06-20-outline-reverse-checkup-case.md |
