@@ -59,7 +59,7 @@
 | [`ai-disclosure`](skills/ai-disclosure) | AI 利用の範囲を整理し、大学・授業・学会・投稿先の方針に合わせた説明文の作成を補助します。 | AI 利用説明 |
 | [`cite-format`](skills/cite-format) | APA / Chicago / MLA または指定テンプレートに合わせて参考文献形式を整えます。真偽確認は別作業です。 | 形式 |
 | [`abstract-bilingual`](skills/abstract-bilingual) | 中文・英文を中心に、完成稿から要旨とキーワードを整理します。数字や固有名詞は人間が確認します。 | 要旨 |
-| [`research-roadmap`](skills/research-roadmap) | 今どの段階にいるか、次にどの skill を使うべきか、何が完了条件かを案内します。 | ナビゲーション |
+| [`research-roadmap`](skills/research-roadmap) | 今どの段階にいるか、次にどの skill を使うべきか、何が完了条件かを案内します。ガイド付きディスパッチャーとして次の skill を自動的に呼び出し、一つずつ進めてくれますが、あなたが判断すべき関所では必ず停止します。 | ナビゲーション |
 
 ## インストール
 

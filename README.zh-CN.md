@@ -95,7 +95,7 @@ flowchart TD
 
 | skill | 功能 | 阶段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程导航：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；只导航不代跑 | 导航 |
+| [`research-roadmap`](skills/research-roadmap) | 全流程导航：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；**引导式精灵——自动接力调用下一个 skill、每关停下等你拍板**，研究判断仍全留给你 | 导航 |
 
 ## 安装
 

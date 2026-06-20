@@ -93,7 +93,7 @@ flowchart TD
 
 | skill | What it does | Stage |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | Full-workflow navigation: determines where you are, which skill to call next, what output proves the stage is done, and which decisions must stay with you. | Navigation |
+| [`research-roadmap`](skills/research-roadmap) | Full-workflow navigation: determines where you are, which skill to call next, what output proves the stage is done, and which decisions must stay with you. Acts as a guided dispatcher — auto-relays into the next skill so you are walked one skill at a time, but stops at every decision gate for you to decide. | Navigation |
 
 ## Installation
 

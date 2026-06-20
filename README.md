@@ -102,7 +102,7 @@ flowchart TD
 
 | skill | 功能 | 階段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**只導航不代跑**，串起其餘十一個 | 導航 |
+| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**引導式精靈——自動接力喚起下一個 skill、每關停下等你拍板**，串起其餘十一個 | 導航 |
 
 ## 🚀 安裝
 
