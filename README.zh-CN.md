@@ -15,7 +15,7 @@
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#十三个-skill)
+[![Skills](https://img.shields.io/badge/skills-14-7e57c2?style=for-the-badge)](#十四个-skill)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![简体中文](https://img.shields.io/badge/简体中文-Ready-e4002b?style=for-the-badge)](#)
 
@@ -45,14 +45,15 @@
 
 ## 工作流地图
 
-从一个念头到一篇可以交出去的论文，十三个 skill 各守一段，`research-roadmap` 在最上层导航：
+从一个念头到一篇可以交出去的论文，十四个 skill 各守一段，`research-roadmap` 在最上层导航：
 
 ```mermaid
 flowchart TD
     Start([一个念头]) --> S1[磨题目<br/>topic-refine]
     S1 --> S2[找文献<br/>citation-verify]
     S2 --> S3[读文献<br/>lit-matrix]
-    S3 --> S4[研究设计<br/>method-design]
+    S3 --> SF[理论框架<br/>framework-build]
+    SF --> S4[研究设计<br/>method-design]
     S4 --> S5[搭大纲<br/>outline-builder]
     S5 --> S6[写初稿<br/>style-tune]
     S6 --> S7[自我审查<br/>self-review]
@@ -65,9 +66,9 @@ flowchart TD
     RM -.哪些只能你决定.-> S10
 ```
 
-## 十三个 skill
+## 十四个 skill
 
-> **十个核心**（逐阶段工作）+ **两个收尾**（定稿阶段）+ **一个导航**（全程定位）= **十三个**。同一套 skill 可用于繁体中文、简体中文与中英混合研究材料。
+> **十一个核心**（逐阶段工作）+ **两个收尾**（定稿阶段）+ **一个导航**（全程定位）= **十四个**；其中十二个为 Stable，`venue-fit` 为 Beta，`framework-build` 为 Draft。
 
 ### 核心：一阶段一个
 
@@ -76,6 +77,7 @@ flowchart TD
 | [`topic-refine`](skills/topic-refine) | 苏格拉底式磨题：问题意识 → 有界发散 → 三问收敛（新 / 可行 / 谁在乎）→ 导师模拟质询 → 一页研究问题简报；只追问不替你定题 | 磨题 |
 | [`citation-verify`](skills/citation-verify) | 引用核查：用 Crossref / OpenAlex / Semantic Scholar 等公开 API 验证参考文献是否真实存在，并标出 DOI 贴错、拆名、疑似虚构引用 | 找文献 |
 | [`lit-matrix`](skills/lit-matrix) | 文献精读与矩阵：单篇四栏笔记（主张 / 证据 / 方法 / 可挑战处）、跨篇对照矩阵、综述对话地图 | 读文献 |
+| [`framework-build`](skills/framework-build) | 理论框架定锚：从文献地图摊开候选框架（解释什么 / 理论代价 / 库存支撑）、推荐分层（主框架→中介机制→实证抓手→落点），并硬停在 GATE 让你拍板主框架；另有辅助框架嵌入与逆向体检两种模式。 | 框架 |
 | [`method-design`](skills/method-design) | 研究设计：方法地图、访谈提纲 / 问卷初稿 + 人工校准、角色扮演预访谈、编码建议（解释留给你）、统计误区核查 | 设计 |
 | [`outline-builder`](skills/outline-builder) | 论文骨架：选择结构模式（IMRaD / 综述 / 思辨 / 政策分析）、生成大纲、设计段落论证链 claim-evidence-warrant | 大纲 |
 | [`style-tune`](skills/style-tune) | 声音校准：用旧文让 AI 学你的文风、段落级润色（守住整篇代写红线）、中文学术 AI 腔识别清单 | 初稿 |
@@ -95,7 +97,7 @@ flowchart TD
 
 | skill | 功能 | 阶段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程导航：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；**引导式精灵——自动接力调用下一个 skill、每关停下等你拍板**，研究判断仍全留给你 | 导航 |
+| [`research-roadmap`](skills/research-roadmap) | 全流程导航：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；**引导式精灵——自动接力调用下一个 skill、每关停下等你拍板**，串起其余十三个，研究判断仍全留给你 | 导航 |
 
 ## 安装
 
@@ -242,7 +244,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 每个 skill 都拿**真实研究材料**跑过、把暴露的坑写回规则。案例多来自作者真实硕士论文与教学稿，用来说明这些 skill 在真实写作和修改过程中会抓到什么问题。
 
-验证状态分三层：`Draft`（草稿，尚未形成证据链）、`Beta`（可用但仍在打磨）、`Stable`（已用真实材料跑过并写回规则）。目前 12 个 skill 为 **Stable**，`venue-fit` 为 **Beta**；证据链、最小 evidence ledger、source map / action map 规格见 [`VERIFICATION.md`](VERIFICATION.md)。
+验证状态分三层：`Draft`（草稿，尚未形成证据链）、`Beta`（可用但仍在打磨）、`Stable`（已用真实材料跑过并写回规则）。目前 12 个 skill 为 **Stable**，`venue-fit` 为 **Beta**，`framework-build` 为 **Draft**；证据链、最小 evidence ledger、source map / action map 规格见 [`VERIFICATION.md`](VERIFICATION.md)。
 
 | # | 案例 | 一句话战果 |
 |---|---|---|
@@ -259,6 +261,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 011 | [cite-format 排硕士论文参考文献](examples/2026-06-14-citeformat-thesis.md) | 坐实“先验后排”：未核查清单只是错资料的漂亮包装 |
 | 012 | [research-roadmap 导航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化“流程朗读机”：要按产出物定位，而不是按线性顺序 |
 | 013 | [venue-fit 对标作者硕士论文与《公共行政学报》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐实“不编作者须知”与“学位论文转期刊先判文稿类型”，venue-fit 升 Beta |
+| 014 | [framework-build 定锚日台半导体框架](examples/2026-06-21-framework-jasm.md) | 固化理论框架定锚：不堆框架沙拉、不编承重文献、硬 GATE 让研究者拍板主框架 |
 
 ## 设计原则
 

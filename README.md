@@ -19,7 +19,7 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 [![Stars](https://img.shields.io/github/stars/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=ffca28)](https://github.com/DylanChiang-Dev/boya/stargazers)
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-13-7e57c2?style=for-the-badge)](#十三個-skill)
+[![Skills](https://img.shields.io/badge/skills-14-7e57c2?style=for-the-badge)](#十四個-skill)
 [![version](https://img.shields.io/badge/version-0.2.0-7e57c2?style=for-the-badge)](MEMORY.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-First-e4002b?style=for-the-badge)](#)
 
@@ -52,14 +52,15 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 
 ## 🗺️ 工作流地圖
 
-從一個念頭到一篇可以投出去的論文，十三個 skill 各守一段，`research-roadmap` 在最上層導航：
+從一個念頭到一篇可以投出去的論文，十四個 skill 各守一段，`research-roadmap` 在最上層導航：
 
 ```mermaid
 flowchart TD
     Start([💡 一個念頭]) --> S1[磨題目<br/>topic-refine]
     S1 --> S2[找文獻<br/>citation-verify]
     S2 --> S3[讀文獻<br/>lit-matrix]
-    S3 --> S4[研究設計<br/>method-design]
+    S3 --> SF[理論框架<br/>framework-build]
+    SF --> S4[研究設計<br/>method-design]
     S4 --> S5[搭骨架<br/>outline-builder]
     S5 --> S6[寫初稿<br/>style-tune]
     S6 --> S7[自我審查<br/>self-review]
@@ -72,9 +73,9 @@ flowchart TD
     RM -.哪些只有你能決定.-> S10
 ```
 
-## 📦 十三個 skill
+## 📦 十四個 skill
 
-> **十個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十三個**；其中十二個為 Stable，`venue-fit` 已真跑升 Beta。
+> **十一個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十四個**；其中十二個為 Stable、`venue-fit` 為 Beta、`framework-build` 為 Draft。
 
 ### 核心 · 一階段一個
 
@@ -83,6 +84,7 @@ flowchart TD
 | [`topic-refine`](skills/topic-refine) | 蘇格拉底式磨題：問題意識 → 有界發散 → 三問收斂（新／可行／誰在乎）→ 指導教授模擬 → 一頁研究問題簡報；只追問不給答案 | 磨題 |
 | [`citation-verify`](skills/citation-verify) | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否**真實存在**，抓 DOI 貼錯、拆名、虛構引用 | 找文獻 |
 | [`lit-matrix`](skills/lit-matrix) | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖 | 讀文獻 |
+| [`framework-build`](skills/framework-build) | 理論框架定錨：從文獻地圖攤候選框架（解釋什麼／理論代價／庫存支撐）、推薦分層（主框架→中介機制→實證抓手→落點）、硬 GATE 讓你拍板主框架；另有輔助框架嵌入與逆向體檢兩模式。 | 框架 |
 | [`method-design`](skills/method-design) | 研究設計：方法地圖、起草訪談大綱／問卷＋人工校準、角色扮演預訪談、編碼建議（詮釋留你）、統計謬誤核驗 | 設計 |
 | [`outline-builder`](skills/outline-builder) | 論文骨架：選結構模式（IMRaD／綜述／思辨／政策）、長出大綱、段落論證鏈 claim–evidence–warrant（專補推理橋） | 大綱 |
 | [`style-tune`](skills/style-tune) | 聲音校準：用舊文讓 AI 學你的文風、段落級潤稿（守整篇代寫紅線）、中文學術 AI 腔識別清單 | 初稿 |
@@ -102,7 +104,7 @@ flowchart TD
 
 | skill | 功能 | 階段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**引導式精靈——自動接力喚起下一個 skill、每關停下等你拍板**，串起其餘十一個 | 導航 |
+| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**引導式精靈——自動接力喚起下一個 skill、每關停下等你拍板**，串起其餘十三個 | 導航 |
 
 ## 🚀 安裝
 
@@ -178,7 +180,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 
 每個 skill 都拿**真實研究材料**跑過、把暴露的坑寫回規則——多數用在作者自己那本碩士論文上，是一條工作流全鏈的真實示範。
 
-驗證狀態採三層：`Draft`（草稿，尚未形成證據鏈）、`Beta`（可用但仍在磨）、`Stable`（已用真實材料跑過並寫回規則）。目前 12 個 skill 為 **Stable**，`venue-fit` 為 **Beta**；證據鏈、最小 evidence ledger、source map／action map 規格見 [`VERIFICATION.md`](VERIFICATION.md)。
+驗證狀態採三層：`Draft`（草稿，尚未形成證據鏈）、`Beta`（可用但仍在磨）、`Stable`（已用真實材料跑過並寫回規則）。目前 12 個 skill 為 **Stable**，`venue-fit` 為 **Beta**，`framework-build` 為 **Draft**；證據鏈、最小 evidence ledger、source map／action map 規格見 [`VERIFICATION.md`](VERIFICATION.md)。
 
 | # | 案例 | 一句話戰果 |
 |---|---|---|
@@ -195,6 +197,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 011 | [cite-format 排碩論參考文獻](examples/2026-06-14-citeformat-thesis.md) | 坐實「先驗後排——未查核清單＝錯資料的漂亮包裝」 |
 | 012 | [research-roadmap 導航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按線性順序 |
 | 013 | [venue-fit 對標作者碩論與《公共行政學報》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐實「不編作者須知」與「學位論文轉期刊先判文稿類型」，venue-fit 升 Beta |
+| 014 | [framework-build 定錨日台半導體框架](examples/2026-06-21-framework-jasm.md) | 固化理論框架定錨：不堆框架沙拉、不編承重文獻、硬 GATE 讓研究者拍板主框架 |
 
 ## 🧱 設計原則
 
