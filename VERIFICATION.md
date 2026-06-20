@@ -11,9 +11,10 @@
 | Beta | 可用但仍在磨 | 已有實測或局部案例，但邊界條件、地區語境或資料類型仍需要更多回歸 |
 | Draft | 草稿 | 只有設計或少量試跑，尚未形成可依賴的實測證據鏈 |
 
-目前 12 個 Boya skills 列為 **Stable**，`venue-fit` 列為 **Beta**：不是因為「不會錯」，而是因為 Stable skill 至少經過一輪真實材料實測，並把失敗模式寫回規則；`venue-fit` 已有一份真實投稿對標案例，但仍需要更多學科、語種與期刊類型案例才能升 Stable。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
+目前 12 個 Boya skills 列為 **Stable**，`venue-fit` 列為 **Beta**，`framework-build` 列為 **Draft**：不是因為「不會錯」，而是因為 Stable skill 至少經過一輪真實材料實測，並把失敗模式寫回規則；`venue-fit` 已有一份真實投稿對標案例，但仍需要更多學科、語種與期刊類型案例才能升 Stable。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
 
 - **venue-fit**（0.3.0 新增）：目前 **Beta**——已用作者碩論對標《公共行政學報》真實投稿規範，見 `examples/2026-06-18-venuefit-thesis-jpa.md`。升 Stable 條件：再補至少 1 個不同語種或不同學科投稿案例，並確認「不猜作者須知」「學位論文轉期刊先判文稿類型」規則可重複成立。
+- **framework-build**（0.X.0 新增）：目前 **Draft**——已有 1 份真實 JASM 課題定錨案例（`examples/2026-06-21-framework-jasm.md`），但理論框架定錨橫跨學科差異大，升 Beta 需再補至少 1 個不同學科（如人文思辨型「理論視角」而非社科「概念框架」）的定錨案例，確認「分學科分流」「不堆框架沙拉」「庫外框架標需補」可重複成立。
 
 ## Evidence Ledger 最小格式
 
@@ -86,3 +87,4 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | venue-fit | 0.0.1 Beta | 2026-06-18 | 作者碩論 ×《公共行政學報》投稿規範 | 不可編作者須知、學位論文轉期刊需先判文稿類型 | examples/2026-06-18-venuefit-thesis-jpa.md |
 | work-trace-table | convention/template | 2026-06-19 | 碩論 47 筆引用查核＋既有 self-review／ai-disclosure 真錄 | DOI 貼錯不可落 🗑、AI 審查意見先標 🤖、揭露須據表寫具體分工 | examples/2026-06-19-work-trace-table-case.md |
 | outline-builder | 0.0.3 | 2026-06-20 | 碩論骨架與文風既有真錄節錄 | 逆向體檢須三動作齊全；節錄級材料不可偽裝成逐字全文體檢 | examples/2026-06-20-outline-reverse-checkup-case.md |
+| framework-build | 0.X.0 Draft | 2026-06-21 | 日台半導體經濟安全（JASM）課題、文獻已過 lit-matrix | 框架沙拉、紅海誤選、假地基、兩張皮 | examples/2026-06-21-framework-jasm.md |
