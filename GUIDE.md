@@ -51,6 +51,7 @@ Boya 不適合用來做這些事：
 | 題目太大、太散、不知道能不能做 | `topic-refine` |
 | 檢查參考文獻是不是真的存在 | `citation-verify` |
 | 讀幾篇文獻、整理共識與分歧 | `lit-matrix` |
+| 文獻讀完，要把理論透鏡／主框架定下來 | `framework-build` |
 | 想研究方法、訪談大綱、問卷或資料設計 | `method-design` |
 | 搭論文章節、整理段落論證鏈 | `outline-builder` |
 | 潤段落、去 AI 腔、校準成自己的文風 | `style-tune` |
@@ -72,6 +73,7 @@ Boya 不適合用來做這些事：
 topic-refine
 → citation-verify
 → lit-matrix
+→ framework-build
 → method-design
 → outline-builder
 → style-tune
