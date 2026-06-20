@@ -88,3 +88,34 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | work-trace-table | convention/template | 2026-06-19 | 碩論 47 筆引用查核＋既有 self-review／ai-disclosure 真錄 | DOI 貼錯不可落 🗑、AI 審查意見先標 🤖、揭露須據表寫具體分工 | examples/2026-06-19-work-trace-table-case.md |
 | outline-builder | 0.0.3 | 2026-06-20 | 碩論骨架與文風既有真錄節錄 | 逆向體檢須三動作齊全；節錄級材料不可偽裝成逐字全文體檢 | examples/2026-06-20-outline-reverse-checkup-case.md |
 | framework-build | 0.X.0 Draft | 2026-06-21 | 日台半導體經濟安全（JASM）課題、文獻已過 lit-matrix | 框架沙拉、紅海誤選、假地基、兩張皮 | examples/2026-06-21-framework-jasm.md |
+| topic-refine | 0.0.3 | 2026-06-21 | 兩岸關係題＋STORM 五透鏡發散 | 利益透鏡易發無源事實、透鏡撐爆清單、懷疑者最救命 | examples/2026-06-21-topicrefine-storm-lens.md |
+| self-review | 0.0.3 | 2026-06-21 | 教學章稿審查報告＋收尾自評 | 信心分數誘導裝權威、偏誤須分合理留白／假嚴格、缺席視角接文稿類型表 | examples/2026-06-21-selfreview-storm-lens.md |
+| lit-matrix | 0.0.3 | 2026-06-21 | 碩論 5 篇＋盲點缺口框法 | 盲點易滑成「首創」腦補、缺口要扣 RQ 需要的面向 | examples/2026-06-21-litmatrix-storm-lens.md |
+
+## Evidence Ledger 紀錄（2026-06-21 STORM 啟發吸收）
+
+> STORM（Stanford）招牌機制「模擬專家生成議題認識」撞本庫誠信鐵律與「不採無人值守 pipeline」，整套不採用；只取「多角度逼問題／自評」骨架，落進三個既有 skill，產出全鎖成 🤖 待核問題。
+
+### 2026-06-21 · topic-refine · 多透鏡發散只逼問題不生答案
+
+- claim: STORM 五透鏡可當發散維度補盲點，但產出須鎖成 🤖 待核問題、不得發無源事實。
+- source: examples/2026-06-21-topicrefine-storm-lens.md（延用兩岸關係真實案例）。
+- check: 試跑利益透鏡，捕到 AI 差點斷言「北京從接觸獲益」；改成「只標值得查」後重跑；核對子題仍 ≤10、仍走三問。
+- result: 通過。透鏡逼出原維度漏掉的「懷疑前提」「歷史平行」「中斷/監管」盲點，無無源斷言。
+- next: 已寫回 SKILL.md 第 2 步（透鏡表＋三條硬紀律）與 eval；升 0.0.3。
+
+### 2026-06-21 · self-review · 信心分數須與 AI 邊界一致
+
+- claim: 收尾自評（信心/偏誤/缺席）方向同 self-review，可安全吸收；但信心分數對領域細節不得給高分。
+- source: examples/2026-06-21-selfreview-storm-lens.md（延用教學章稿審查報告）。
+- check: 試跑對「三層閱讀法 vs Keshav」給 8/10＝裝權威，改為 4/10 標需專家確認；核對偏誤檢查能分辨「合理留白」與「假嚴格」。
+- result: 通過。信心分數變成「哪幾條優先信、哪幾條自己再查」的導引，非證實感包裝。
+- next: 已寫回 SKILL.md 第 4.5 步與 eval（含 MUST NOT 領域給高分）；升 0.0.3。
+
+### 2026-06-21 · lit-matrix · 盲點缺口只標「這批未覆蓋」不得腦補首創
+
+- claim: 盲點框法可辨識缺口候選，但「這批沒人碰」≠「全世界沒人做過」。
+- source: examples/2026-06-21-litmatrix-storm-lens.md（延用碩論 5 篇）。
+- check: 試跑把「立法幕僚場景沒人碰」誤報成「本研究首創」；改為「目前 5 篇未覆蓋，請擴大檢索確認」後重跑。
+- result: 通過。缺口扣「RQ 需要 × 這批是否覆蓋」兩欄，未腦補不存在文獻。
+- next: 已寫回 SKILL.md 第 4 步缺口處與 eval（含 MUST NOT 腦補首創）；升 0.0.3。
