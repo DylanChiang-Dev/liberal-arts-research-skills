@@ -67,7 +67,7 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 - 無人值守研究 pipeline。
 - Nature／理工論文專用的圖表、專利、投稿包流程。
 
-> **界定：引導式精靈 ≠ 無人值守 pipeline。** `research-roadmap` 自 2026-06-20 升級為「引導式精靈」——會主動接力喚起下一個 skill，讓使用者「一步一個 skill 被帶著走」。它**不是**上面禁止的無人值守 pipeline：兩者差別只在一件事——**遇到「只有你能決定」的關卡會不會停**。引導式精靈每關硬停、等使用者拍板才放行，研究判斷全留人；無人值守 pipeline 不停、AI 代做判斷。後者仍不採用。接力的是流程腳手架，不接力的是研究判斷。
+> **界定：引導式精靈 ≠ 無人值守 pipeline。** `boya`（原 `research-roadmap`）自 2026-06-20 升級為「引導式精靈」——會主動接力喚起下一個 skill，讓使用者「一步一個 skill 被帶著走」。它**不是**上面禁止的無人值守 pipeline：兩者差別只在一件事——**遇到「只有你能決定」的關卡會不會停**。引導式精靈每關硬停、等使用者拍板才放行，研究判斷全留人；無人值守 pipeline 不停、AI 代做判斷。後者仍不採用。接力的是流程腳手架，不接力的是研究判斷。
 
 若未來某個 skill 明顯過長，才考慮把少量共用材料外移到 `knowledge/` 或 `templates/`，但 `SKILL.md` 仍保留可直接閱讀的核心規則。
 
@@ -84,7 +84,7 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | ai-disclosure | 0.0.2 | 2026-06-14 | 重度 AI 協作聲明 | 重度使用時 AI 不敢說 | examples/2026-06-14-aidisclosure-heavy-ai-use.md |
 | abstract-bilingual | 0.0.2 | 2026-06-14 | 碩論中英摘要 | 關鍵詞中英不對齊、「顯著」當統計詞照搬 | examples/2026-06-14-abstractbilingual-thesis.md |
 | cite-format | 0.0.2 | 2026-06-14 | 碩論參考文獻 | 先排後驗＝錯資料的漂亮包裝 | examples/2026-06-14-citeformat-thesis.md |
-| research-roadmap | 0.0.2 | 2026-06-14 | 完整研究工作流 | 退化成目錄朗讀機 | examples/2026-06-14-researchroadmap-workflow.md |
+| boya（原 research-roadmap） | 0.0.2 | 2026-06-14 | 完整研究工作流 | 退化成目錄朗讀機 | examples/2026-06-14-researchroadmap-workflow.md |
 | venue-fit | 0.0.1 Beta | 2026-06-18 | 作者碩論 ×《公共行政學報》投稿規範 | 不可編作者須知、學位論文轉期刊需先判文稿類型 | examples/2026-06-18-venuefit-thesis-jpa.md |
 | work-trace-table | convention/template | 2026-06-19 | 碩論 47 筆引用查核＋既有 self-review／ai-disclosure 真錄 | DOI 貼錯不可落 🗑、AI 審查意見先標 🤖、揭露須據表寫具體分工 | examples/2026-06-19-work-trace-table-case.md |
 | outline-builder | 0.0.3 | 2026-06-20 | 碩論骨架與文風既有真錄節錄 | 逆向體檢須三動作齊全；節錄級材料不可偽裝成逐字全文體檢 | examples/2026-06-20-outline-reverse-checkup-case.md |

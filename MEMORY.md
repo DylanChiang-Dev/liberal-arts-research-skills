@@ -2,6 +2,14 @@
 
 ## CHANGELOG
 
+### main（2026-06-23）`research-roadmap` 更名為 `boya`（總導航入口）
+
+- 把全程導航 skill `research-roadmap` 更名為 **`boya`**（與倉庫同名，作為使用者不確定時的預設入口，呼叫即 `boya`／`博雅`）。`git mv skills/research-roadmap → skills/boya`、`evals/research-roadmap.md → evals/boya.md`。
+- SKILL frontmatter `name` 改 `boya`、description 改以 `boya`／`博雅`／「帶我走」為主觸發語並強化「核心職責＝主動告訴你下一步該做什麼」；eval 補一條「boya 觸發＋主動告知下一步」MUST。
+- 同步：`ROUTER.md`（補「👉 從這裡開始」入口區塊＋改路由列）、四語 README（敘述／mermaid 節點／skill 表連結 `skills/boya`／實測案例 012 顯示名）、`GUIDE.md` §2、`VERIFICATION.md`（界定段＋狀態表）、`CLAUDE.md`（關鍵文件地圖＋設計邊界段）。
+- 刻意保留檔名與內文不改的歷史檔（加頂部「原名」註記）：`examples/2026-06-14-researchroadmap-workflow.md`、`docs/superpowers/` 3 份 spec/plan——維持實跑真錄不竄改（誠信鐵律：真錄不竄改）。
+- AGENTS.md 未引用該 skill 名，雙向同步無衝突。**版本 tag／plugin.json 版號未動，留待作者決定是否隨此改名打 tag。**
+
 ### main（2026-06-22）framework-build 0.0.2 Draft→0.1.0 Beta（人文思辨型首例，三分流覆蓋兩）
 
 - `framework-build` 0.0.2 Draft→**0.1.0 Beta**：拿社計博士生 LLM silicon sampling 知識論課題跑**人文思辨型**首例（批判實在論主視角，四原則主義降為論點）。三分流（概念框架／理論視角／分析框架）現已實測覆蓋前兩支，eval MUST #1「先判論文類型再定錨」首次在人文思辨分支驗成立。升版號理由：新增人文思辨型分析維度分流 = 工作流結構調整，依 AGENTS.md 規則升 **0.1.0**（minor）。

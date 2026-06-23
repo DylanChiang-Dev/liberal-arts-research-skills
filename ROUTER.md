@@ -1,6 +1,7 @@
 # ROUTER　博雅技能路由表
 
-> agent 接到任務先查此表，定位該喚哪個 skill。**不確定先喚 `research-roadmap` 做元導航。**
+> 👉 **從這裡開始**：不確定要做什麼、或想被一步步帶著走，先喚 `boya`（總導航入口，原 `research-roadmap`）——它會判斷你在哪一階段、主動告訴你下一步該做什麼、並接力喚起對應 skill。
+> agent 接到任務先查此表，定位該喚哪個 skill。**不確定先喚 `boya` 做元導航。**
 > 觸發語摘自各 `skills/<name>/SKILL.md` 的 description；以該檔為準。
 
 | 觸發情境 / 關鍵詞 | skill | 階段 | 僅你能決定的關卡 |
@@ -18,7 +19,7 @@
 | 「AI 使用聲明／AI 揭露怎麼寫／這樣用 AI 算不算違規／有沒有用 AI」 | ai-disclosure | 揭露 | 如實盤點使用程度 |
 | 「排成 APA／轉成 Chicago/MLA／統一引用格式／隨文引註跟文獻清單對不對得上」 | cite-format | 格式 | （格式後仍須先查核真偽） |
 | 「寫摘要／生成中英文摘要／abstract 怎麼寫／做關鍵詞」 | abstract-bilingual | 摘要 | 摘要是否忠實於定稿 |
-| 「我要寫論文，從頭帶我走／我現在該做什麼／研究流程怎麼跑／下一步用哪個 skill」 | research-roadmap | 導航 | 每一關的過關判斷 |
+| 「boya／博雅／帶我走／我現在該做什麼／下一步用哪個 skill」 | boya | 導航 | 每一關的過關判斷 |
 | 「要論文結構模板／骨架／簡報範本」 | templates/ | 工具 | 結構選擇仍是你的 |
 | 「投稿前對標目標刊／這篇夠不夠 SSCI/TSSCI/CSSCI／作者須知對上了嗎／投出去前還差什麼」 | venue-fit | 投稿 | 投不投這刊、差距補不補（真實規範須你查、不可編） |
 | 「投稿去哪／期刊分級／venue」 | knowledge/venues.md | 工具 | 真實分級數據須你填，不可編造 |

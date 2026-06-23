@@ -52,7 +52,7 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 
 ## 🗺️ 工作流地圖
 
-從一個念頭到一篇可以投出去的論文，十五個 skill 各守一段，`research-roadmap` 在最上層導航：
+從一個念頭到一篇可以投出去的論文，十五個 skill 各守一段，`boya` 在最上層導航：
 
 ```mermaid
 flowchart TD
@@ -68,7 +68,7 @@ flowchart TD
     S8 --> S9[投稿對標<br/>venue-fit]
     S9 --> S10[倫理揭露<br/>ai-disclosure]
     S10 --> End([📄 可投出去的論文])
-    RM{{research-roadmap<br/>全程導航書脊}} -.隨時定位你在哪.-> S1
+    RM{{boya<br/>全程導航書脊}} -.隨時定位你在哪.-> S1
     RM -.該喚哪個 skill.-> S5
     RM -.哪些只有你能決定.-> S10
 ```
@@ -105,7 +105,7 @@ flowchart TD
 
 | skill | 功能 | 階段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程導航：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**引導式精靈——自動接力喚起下一個 skill、每關停下等你拍板**，串起其餘十四個 | 導航 |
+| [`boya`](skills/boya) | 全流程導航與入口（原 `research-roadmap`）：判斷你在哪一階段、該喚哪個 skill、哪些關卡只有你能決定、何時過關；**引導式精靈——自動接力喚起下一個 skill、每關停下等你拍板**，串起其餘十四個 | 導航 |
 
 ## 🚀 安裝
 
@@ -196,7 +196,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 009 | [ai-disclosure 處理重度 AI 協作聲明](examples/2026-06-14-aidisclosure-heavy-ai-use.md) | 暴露「重度使用時 AI 不敢說」 |
 | 010 | [abstract-bilingual 生碩論中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) | 抓到「官方關鍵詞中英本身不對齊／『顯著』是統計詞別照搬」 |
 | 011 | [cite-format 排碩論參考文獻](examples/2026-06-14-citeformat-thesis.md) | 坐實「先驗後排——未查核清單＝錯資料的漂亮包裝」 |
-| 012 | [research-roadmap 導航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按線性順序 |
+| 012 | [boya（原 research-roadmap）導航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化「目錄朗讀機」——要依產出物倒推、非按線性順序 |
 | 013 | [venue-fit 對標作者碩論與《公共行政學報》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐實「不編作者須知」與「學位論文轉期刊先判文稿類型」，venue-fit 升 Beta |
 | 014 | [framework-build 定錨日台半導體框架](examples/2026-06-21-framework-jasm.md) | 固化理論框架定錨：不堆框架沙拉、不編承重文獻、硬 GATE 讓研究者拍板主框架 |
 

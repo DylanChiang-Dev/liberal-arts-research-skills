@@ -1,5 +1,7 @@
 # 設計：research-roadmap「引導式精靈」模式（guided dispatcher）
 
+> 註（2026-06-23）：`research-roadmap` 已更名 `boya`；本設計文件為歷史記錄，內文沿用舊名。
+
 > 日期：2026-06-20
 > 範圍：一份 spec，主要落在 `skills/research-roadmap/SKILL.md`。把 research-roadmap 從「只指路、要使用者自己一個一個手動喚 skill」升級成「喚一次就被一步一步帶著走、自動接力到下一個 skill，但每個『只有你能決定』的關卡硬停等人」。**不新增 skill、不碰其餘 12 個 skill 的核心工作流（至多加一句回報交叉指引）、不做無人值守 pipeline。**
 

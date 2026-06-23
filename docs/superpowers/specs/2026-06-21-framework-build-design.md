@@ -1,5 +1,7 @@
 # 設計：新增 skill `framework-build`（理論框架定錨）
 
+> 註（2026-06-23）：文中 `research-roadmap` 已更名 `boya`；本文件為歷史記錄，沿用舊名。
+
 > 日期：2026-06-21
 > 範圍：**新增一個獨立 skill**，插在 `lit-matrix`（讀文獻）與 `method-design`（選方法）之間，並重編 `research-roadmap` 階段、把 `outline-builder` 那關更名。涵蓋三個模式：正向定錨 ＋ 輔助框架嵌入 ＋ 逆向體檢。
 

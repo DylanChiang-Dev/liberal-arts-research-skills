@@ -45,7 +45,7 @@
 
 ## 工作流地图
 
-从一个念头到一篇可以交出去的论文，十五个 skill 各守一段，`research-roadmap` 在最上层导航：
+从一个念头到一篇可以交出去的论文，十五个 skill 各守一段，`boya` 在最上层导航：
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ flowchart TD
     S8 --> S9[投稿对标<br/>venue-fit]
     S9 --> S10[AI 使用说明<br/>ai-disclosure]
     S10 --> End([可交出去的论文])
-    RM{{research-roadmap<br/>全程导航}} -.随时定位你在哪.-> S1
+    RM{{boya<br/>全程导航}} -.随时定位你在哪.-> S1
     RM -.该调用哪个 skill.-> S5
     RM -.哪些只能你决定.-> S10
 ```
@@ -98,7 +98,7 @@ flowchart TD
 
 | skill | 功能 | 阶段 |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | 全流程导航：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；**引导式精灵——自动接力调用下一个 skill、每关停下等你拍板**，串起其余十四个，研究判断仍全留给你 | 导航 |
+| [`boya`](skills/boya) | 全流程导航与入口（原 `research-roadmap`）：判断你在哪一阶段、该调用哪个 skill、哪些关卡只有你能决定、什么时候算过关；**引导式精灵——自动接力调用下一个 skill、每关停下等你拍板**，串起其余十四个，研究判断仍全留给你 | 导航 |
 
 ## 安装
 
@@ -260,7 +260,7 @@ cp -r boya/skills/* ~/.cc-switch/skills/
 | 009 | [ai-disclosure 处理重度 AI 协作声明](examples/2026-06-14-aidisclosure-heavy-ai-use.md) | 暴露重度使用时 AI 倾向淡化使用程度 |
 | 010 | [abstract-bilingual 生成硕士论文中英摘要](examples/2026-06-14-abstractbilingual-thesis.md) | 抓到中英关键词不对齐与“显著”误用问题 |
 | 011 | [cite-format 排硕士论文参考文献](examples/2026-06-14-citeformat-thesis.md) | 坐实“先验后排”：未核查清单只是错资料的漂亮包装 |
-| 012 | [research-roadmap 导航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化“流程朗读机”：要按产出物定位，而不是按线性顺序 |
+| 012 | [boya（原 research-roadmap）导航完整研究工作流](examples/2026-06-14-researchroadmap-workflow.md) | 抓到最大退化“流程朗读机”：要按产出物定位，而不是按线性顺序 |
 | 013 | [venue-fit 对标作者硕士论文与《公共行政学报》](examples/2026-06-18-venuefit-thesis-jpa.md) | 坐实“不编作者须知”与“学位论文转期刊先判文稿类型”，venue-fit 升 Beta |
 | 014 | [framework-build 定锚日台半导体框架](examples/2026-06-21-framework-jasm.md) | 固化理论框架定锚：不堆框架沙拉、不编承重文献、硬 GATE 让研究者拍板主框架 |
 | 015 | [lit-discovery 探勘公部门生成式 AI 文献](examples/2026-06-21-litdiscovery-genai-public-sector.md) | 实打 OpenAlex/Crossref：候选全来自真实命中、中文覆盖不足标待人工、弱相关保留不删、剔除非论文 grant 记录 |

@@ -43,7 +43,7 @@ The core idea: **make tacit supervisor-like judgment more explicit.** These skil
 
 ## Workflow Map
 
-From a rough idea to a thesis or paper ready for submission, the 15 skills each cover one part of the workflow. `research-roadmap` sits above them as the navigator.
+From a rough idea to a thesis or paper ready for submission, the 15 skills each cover one part of the workflow. `boya` sits above them as the navigator.
 
 ```mermaid
 flowchart TD
@@ -59,7 +59,7 @@ flowchart TD
     S8 --> S9[Venue fit<br/>venue-fit]
     S9 --> S10[AI-use statement<br/>ai-disclosure]
     S10 --> End([A paper or thesis ready to submit])
-    RM{{research-roadmap<br/>workflow navigator}} -.where am I?.-> S1
+    RM{{boya<br/>workflow navigator}} -.where am I?.-> S1
     RM -.which skill next?.-> S5
     RM -.what must only I decide?.-> S10
 ```
@@ -96,7 +96,7 @@ flowchart TD
 
 | skill | What it does | Stage |
 |---|---|---|
-| [`research-roadmap`](skills/research-roadmap) | Full-workflow navigation: determines where you are, which skill to call next, what output proves the stage is done, and which decisions must stay with you. Acts as a guided dispatcher — auto-relays into the next skill so you are walked one skill at a time, but stops at every decision gate for you to decide. | Navigation |
+| [`boya`](skills/boya) | Full-workflow navigation and entry point (formerly `research-roadmap`): determines where you are, which skill to call next, what output proves the stage is done, and which decisions must stay with you. Acts as a guided dispatcher — auto-relays into the next skill so you are walked one skill at a time, but stops at every decision gate for you to decide. | Navigation |
 
 ## Installation
 
@@ -223,7 +223,7 @@ Validation status has three levels: `Draft` (designed but not yet evidence-backe
 | 009 | [ai-disclosure for heavy AI collaboration](examples/2026-06-14-aidisclosure-heavy-ai-use.md) | Showed that AI tends to understate heavy AI use unless instructed otherwise. |
 | 010 | [abstract-bilingual on a thesis abstract](examples/2026-06-14-abstractbilingual-thesis.md) | Found keyword mismatch and misuse of statistically loaded language. |
 | 011 | [cite-format on a thesis bibliography](examples/2026-06-14-citeformat-thesis.md) | Confirmed that formatting must come after verification. |
-| 012 | [research-roadmap across the full workflow](examples/2026-06-14-researchroadmap-workflow.md) | Avoided becoming a process reciter by locating stages through actual outputs. |
+| 012 | [boya (formerly research-roadmap) across the full workflow](examples/2026-06-14-researchroadmap-workflow.md) | Avoided becoming a process reciter by locating stages through actual outputs. |
 | 013 | [venue-fit on a thesis and Journal of Public Administration](examples/2026-06-18-venuefit-thesis-jpa.md) | Confirmed that venue-fit must not invent author guidelines and must first detect the thesis-to-journal genre gap. |
 | 014 | [framework-build anchors a Japan-Taiwan semiconductor framework](examples/2026-06-21-framework-jasm.md) | Captures framework anchoring rules: no framework salad, no invented load-bearing literature, and a hard gate for the researcher’s main-framework choice. |
 | 015 | [lit-discovery on generative AI in the public sector](examples/2026-06-21-litdiscovery-genai-public-sector.md) | Real OpenAlex/Crossref run: every candidate from a real hit, Chinese-coverage gaps marked for manual search, low-relevance kept not dropped, non-article grant records filtered out. |

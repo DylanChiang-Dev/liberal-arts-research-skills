@@ -1,5 +1,7 @@
 # framework-build（理論框架定錨）Implementation Plan
 
+> 註（2026-06-23）：文中 `research-roadmap` 已更名 `boya`；本文件為歷史記錄，沿用舊名。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 新增獨立 skill `framework-build`（理論框架定錨），插在 `lit-matrix` 與 `method-design` 之間，固化真實 JASM 場景驗證過的理論框架定錨工法，並重編 `research-roadmap` 階段。
