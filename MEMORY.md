@@ -2,6 +2,36 @@
 
 ## CHANGELOG
 
+### main（2026-06-23）期刊事實表・階段一 SSCI 全 10 學科群一次跑完（28 本）
+
+- 接續第 1 批，把 SSCI 階段 10 個學科群一次跑完（群 2–10 各取 2–3 本代表刊）：政治/IR、社會、傳播、STS、IS、教育、心理、管理/組織、法律/法政，共補 23 本，連同第 1 批 5 本＝28 本，全部寫入 venues.md。
+- 方法：群 2–10 由 WebSearch 自各刊**官方作者須知頁**取得事實（多含字數/摘要/關鍵詞/引用格式/AI 政策），但**未親自渲染原頁**，故狀態一律 ❓；每筆附來源 URL＋查證日期，未涵蓋欄標待補。Elsevier 刊（Information & Management、Computers & Education、CHB）抓到明確生成式 AI 政策。
+- 完整度披露：✅ 親抓 2（JPART、GIQ）；❓ 搜尋待核 24；待補 2（Governance、PMR，出版商 403）。全程無一從記憶填。
+- venues.md 增至 127 行（未破 200 拆檔線，暫不拆）。升 ❓→✅ 需逐本親開官網渲染核對，留待後續（可用瀏覽器分批，或外部瀏覽 agent 照任務書跑）。TSSCI／CSSCI 兩階段未啟動。
+
+### main（2026-06-23）期刊事實表・階段一 SSCI 第 1 批（公共行政，5 本）
+
+- 依 `plans/2026-06-23-真實期刊事實表分階段計劃.md` 啟動：venues.md 新增「期刊事實表」區塊，第 1 批公共行政 SSCI 候選 5 本（JPART／PAR／Governance／GIQ／PMR）。
+- 第一輪 web_fetch：僅 **JPART**（Oxford）取得全文標 ✅；其餘 4 本出版商頁 JS 動態只得空殼。
+- 第二輪外部瀏覽 agent 補抓（附來源任務書 `plans/2026-06-23-期刊事實表-外部抓取任務書.md`）：**GIQ** 由官方 ScienceDirect Guide for Authors 補齊升 ✅（摘要 ≤250、關鍵詞 1–7、APA7、highlights 3–5、雙匿名、且有明確生成式 AI 揭露政策；僅全文字數上限待補）；**PAR** 補到 ❓（8,000 詞、150 詞摘要、Chicago16 Author-Date，但來源是 PAR 編輯團隊 submission-process 頁非 Wiley 官方頁，AI/DOI 待補）；**Governance／PMR** 出版商須知頁均回 **403 Forbidden**，依鐵律整本留待補，不以搜尋摘要或他刊資料硬填。
+- 結果：✅ JPART、GIQ；❓ PAR；待補 Governance、PMR。坑：Wiley／T&F 對自動化抓取回 403，需真人瀏覽器登入/開頁手動複製。索引層級（SSCI/分區）非須知頁內容，一律標「待確認」不憑記憶。
+- 驗證了改後誠信鐵律的實效：策展真資料附來源＋日期可入表，但抓不到一律 ❓/待補，全程未從記憶硬填。
+- 未升版號未打 tag。
+
+### main（2026-06-23）誠信鐵律措辭收斂：區分「編造」與「策展真資料」
+
+- 起因：評估 `brycewang-stanford/awesome-journal-skills`（1984 skill／122 逐刊深度包，把期刊作者須知與編委偏好策展成靜態庫）。釐清一個被混淆的點：**人工查證並附來源的策展期刊資料，不是「編造」**；編造專指「憑記憶／無來源生成事實」。原 venue-fit 鐵律 1／venues.md 的「**不內建**任何期刊規範」把「不准編造」（內核）與「連策展真資料都不准內建」（保守設計選擇）綁死，過度延伸。
+- 措辭調整（內核不動、鬆開設計選擇那半）：CLAUDE.md 誠信鐵律新增「編造 ≠ 策展」一條、AGENTS.md 內容鐵律同步補；venue-fit 鐵律 1 由「不內建」改為「不憑記憶生成；策展真資料須附來源＋查證日期＋過時標待複查＋承重前回官網核對」，eval MUST NOT 同步；venues.md 表頭誠信句同改，候選刊表補「查證日期」欄。**絕對保留：缺欄留待補、絕不從記憶填。**
+- 範圍邊界：本輪只改**規則措辭**，未建任何期刊資料庫。是否把 venues.md 養成帶來源的小型真期刊表，屬規模／維護決定，待另案；明確不採用 awesome-journal-skills 的逐刊 1984-skill 架構（撞「不讓 skill 膨脹」邊界）。
+- 雙向同步：CLAUDE.md ↔ AGENTS.md 誠信段已對齊。未升版號未打 tag。
+
+### main（2026-06-23）lit-matrix 缺口段補「強弱判準＋四類型」、self-review 補表述膨脹自查
+
+- 借鑒一篇「從 30 篇文獻提煉研究缺口」的實務貼文（理工味、行銷文性質，只取判斷邏輯不取其 STEM 例子，亦不作為來源引用）。經比對，文章八成內容 boya 已涵蓋（lit-matrix 四欄卡／三層閱讀／對話地圖、topic-refine 三問）。**評估後刻意不開 `knowledge/` 卡也不新增 skill**：依 CONVENTIONS §8「預設留 SKILL.md，只有跨 skill 真複用才外移」，此判準目前唯一主人是 lit-matrix。
+- `lit-matrix` 第 4 步缺口段：補「先判強弱（弱＝研究較少／不足；強＝說清前人解釋停在哪、那個停住懸置了什麼問題）」＋對象／方法／機制／情境四類定性（說服力遞增，文組翻譯版：機制＝因果或詮釋路徑），並保留既有盲點框法與「不腦補、標候選回查」誠信細節；新增已知陷阱 8「把『研究不足』當缺口」。eval 補兩條 MUST、一條 MUST NOT。
+- `self-review` 第 3 步誠信自查補一條「缺口／貢獻表述膨脹」（局部缺口包裝成過大突破），eval 同步補一條 MUST。對應原文 gap 公式的分母 B；**刻意不採用 `G=(T×V×E)/B` 偽量化公式**（與 boya 散文鐵律風格不合、假精確）。
+- frontmatter 不帶版本。**本輪標 Draft 級修訂、未升版號未打 tag**：依 CONVENTIONS §4／§5，需先拿真實文獻群實跑一遍、把坑寫回規則並補 `examples/` 真錄，才升 lit-matrix 尾號。
+
 ### main（2026-06-23）`research-roadmap` 更名為 `boya`（總導航入口）
 
 - 把全程導航 skill `research-roadmap` 更名為 **`boya`**（與倉庫同名，作為使用者不確定時的預設入口，呼叫即 `boya`／`博雅`）。`git mv skills/research-roadmap → skills/boya`、`evals/research-roadmap.md → evals/boya.md`。
