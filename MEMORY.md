@@ -2,6 +2,23 @@
 
 ## CHANGELOG
 
+### v0.6.1（2026-06-30）lit-discovery venue 命中路徑壓測（對真實 TSSCI 官方名單）
+
+- `lit-discovery` 0.6.0→**0.6.1 打磨輪**：補先前 venue 步驟「英文候選幾乎全 ❓、未壓到命中路徑」的缺口。實抓國科會人社中心官方 TSSCI／THCI 名單（`hss.ntu.edu.tw/zh-tw/thcitssci/50`，名單適用2024），對前案真實刊《公共行政學報》等台灣期刊**走通命中路徑**（核出學門＋級別＋版次）。
+- 固化四個新坑（寫回 SKILL 已知陷阱 7–10、knowledge/venues.md、eval）：①**官方頁也可能非最新版**（抓到「名單適用2024」，但 2025 名單適用2026 已存在）→命中標抓取版次＋日期、提示可能有更新版，不寫「現行」；②**精確比對、查無不自動更正**（「公共行政學刊」近似誤名不得改判為「公共行政學報」）；③**CSSCI 官方名單非公開可自由抓**→大陸刊無名單即 ❓待查；④**無 discovery API 時須誠實標「未新撈」**，不假裝檢索。
+- **操作限制如實記**：本輪 bash 網路與 web_fetch 清單端點失效，無法新撈文章，故只壓測 venue **比對層**、未含新撈文章；**未捏造任何文章標題或 DOI**。升 Stable 仍待 API 恢復後補「中文題探勘→撈真實文章→venue 比對」全鏈案例，並補抓 TSSCI 2025／CSSCI 名單。
+- 版本依規則屬 `0.0.X` 打磨輪，尾號 +1 升 **0.6.1**；新增 `examples/2026-06-30-litdiscovery-venue-tssci-match.md`；VERIFICATION 狀態行＋底表＋兩條 Evidence Ledger；plugin.json（claude／codex）與 README badge 0.6.0→0.6.1。`check-skills.py` 0 ERROR／0 WARN。git tag 留作者。
+
+### v0.6.0（2026-06-30）借鑒 paper-quality-filter，lit-discovery 新增 venue 證據步驟＋升 Beta
+
+- 評估 `yilaai/paper-quality-filter`（雙語 venue 證據 skill＋本地分級資料集＋自動排序腳本）：其理工本位分區（JCR／CAS／CCF／EI）、寫死閾值的 `rank_papers.py` 自動排序、**無日期靜態資料集**皆撞本庫設計邊界與誠信鐵律（無年份＝拿舊當新），**整套不採用**；只取「拿真表查、附證據、查不到老實標、最後人來定」骨架，改寫成人文社科版 venue 證據步驟。
+- 版本依規則升 **v0.6.0**：`lit-discovery` 新增第 3.5 步 venue 證據工作流＋`knowledge/venues.md` 新增人文社科 venue 來源層＝工作流結構調整（`0.X.0`）。
+- **lit-discovery 0.5.0 Draft→0.6.0 Beta**：新增選用第 3.5 步「標出處強弱、給先讀提示」，與相關性分層平行（一條管切題、一條管分量）。鐵律補第 6 條（venue 不准猜、回查官方名單標版次年份、不引入 JCR／CAS／CCF／EI、強≠切題、查無≠論文差）；已知陷阱補第 6 條（分級會過期／同名異刊）。
+- `knowledge/venues.md` 新增「人文社科 venue 權威來源表」：CSSCI（南大，2 年，2025–2026）、北大核心《中文核心期刊要目總覽》（北大圖書館，3 年，2023 版）、AMI核心（社科院，4 年，2022）、TSSCI（國科會，3 年，2025 名單）、SSCI／A&HCI（Clarivate，滾動）。只記「去哪查、哪一版」，具體入選與級別由作者到官方核對後填，AI 不代判。
+- 沿用案例 013（公部門×生成式 AI）加跑 venue 證據首跑真錄（`examples/2026-06-30-litdiscovery-venue-evidence.md`），Crossref 解 DOI 補刊名，固化三坑並修正：①**來源表缺 SSCI**→英文社科候選（Journal of Information Science）被誤標查無，補入 SSCI；②**無刊名先解 DOI**，解不出標 ❓；③**預印本不給 venue 級**。實測 5 筆候選 0 筆被編造分級。
+- 配套：`evals/lit-discovery.md` 補 venue 相關 MUST／MUST NOT；`VERIFICATION.md` 狀態表 lit-discovery→Beta、底表補一行、Evidence Ledger 補兩條；README 第 87 行 skill 描述補 venue 提示、狀態行三 Beta、version badge 0.5.1→0.6.0；plugin.json（claude／codex）0.5.1→0.6.0。升 Stable 條件：補中文／台灣期刊為主候選壓測 venue 命中路徑。
+- 防呆 `scripts/check-skills.py`：0 ERROR／0 WARN。**git tag 留作者檢視後自行切**（工作樹尚有其他未提交變更，未代為 commit／tag）。
+
 ### v0.5.1（2026-06-27）人類在環命名＋outline-builder topic-sentence 前置
 
 - **人類在環（human-in-the-loop）顯化**：把原「核心信念」第四條提升為全庫最高設計原則並命名。README 核心信念加分界句、第四條改名「人類在環，不是一鍵跑完」、設計原則段加總綱條；`CLAUDE.md` 設計邊界段前置一句立為「所有刻意不採用的總綱」；`AGENTS.md` 加首條核心設計原則。三處措辭對齊（CLAUDE／AGENTS 雙向同步硬規）。三語 README 未跟改（默認規則）。

@@ -20,7 +20,7 @@ Boya 幫你磨題、查引用、讀文獻、設計方法、搭大綱、修初稿
 [![Forks](https://img.shields.io/github/forks/DylanChiang-Dev/boya?style=for-the-badge&logo=github&color=42a5f5)](https://github.com/DylanChiang-Dev/boya/network/members)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4caf50?style=for-the-badge)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-15-7e57c2?style=for-the-badge)](#十五個-skill)
-[![version](https://img.shields.io/badge/version-0.5.1-7e57c2?style=for-the-badge)](MEMORY.md)
+[![version](https://img.shields.io/badge/version-0.6.1-7e57c2?style=for-the-badge)](MEMORY.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-First-e4002b?style=for-the-badge)](#)
 
 </div>
@@ -77,14 +77,14 @@ flowchart TD
 
 ## 📦 十五個 skill
 
-> **十二個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十五個**；其中十二個為 Stable、`venue-fit` 為 Beta、`framework-build` 與 `lit-discovery` 為 Draft。
+> **十二個核心**（逐階段工作）＋ **兩個收尾**（定稿階段）＋ **一個導航**（書脊）＝ **十五個**；其中十二個為 Stable、`venue-fit`、`framework-build` 與 `lit-discovery` 為 Beta。
 
 ### 核心 · 一階段一個
 
 | skill | 功能 | 階段 |
 |---|---|---|
 | [`topic-refine`](skills/topic-refine) | 蘇格拉底式磨題：問題意識 → 有界發散 → 三問收斂（新／可行／誰在乎）→ 指導教授模擬 → 一頁研究問題簡報；只追問不給答案 | 磨題 |
-| [`lit-discovery`](skills/lit-discovery) | 文獻探勘：把研究問題拆成檢索策略，用 OpenAlex / Crossref / Semantic Scholar 撈**待核候選清單**、按相關性分層，交棒查核與精讀；絕不編造、查無標待人工 | 找文獻 |
+| [`lit-discovery`](skills/lit-discovery) | 文獻探勘：把研究問題拆成檢索策略，用 OpenAlex / Crossref / Semantic Scholar 撈**待核候選清單**、按相關性分層；選用「先讀哪篇」出處提示（回查 CSSCI／TSSCI／北大核心／AMI核心／SSCI／A&HCI 官方名單、標版次年份，查不到標待查），交棒查核與精讀；絕不編造、查無標待人工 | 找文獻 |
 | [`citation-verify`](skills/citation-verify) | 引用查核：用 Crossref / OpenAlex / Semantic Scholar 公開 API 驗證參考文獻是否**真實存在**，抓 DOI 貼錯、拆名、虛構引用 | 找文獻 |
 | [`lit-matrix`](skills/lit-matrix) | 文獻精讀與矩陣：單篇四欄筆記（主張／證據／方法／可挑戰處）、跨篇對照矩陣、綜述對話地圖 | 讀文獻 |
 | [`framework-build`](skills/framework-build) | 理論框架定錨：從文獻地圖攤候選框架（解釋什麼／理論代價／庫存支撐）、推薦分層（主框架→中介機制→實證抓手→落點）、硬 GATE 讓你拍板主框架；另有輔助框架嵌入與逆向體檢兩模式。 | 框架 |

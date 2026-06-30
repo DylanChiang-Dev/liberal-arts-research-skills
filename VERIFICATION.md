@@ -11,11 +11,11 @@
 | Beta | 可用但仍在磨 | 已有實測或局部案例，但邊界條件、地區語境或資料類型仍需要更多回歸 |
 | Draft | 草稿 | 只有設計或少量試跑，尚未形成可依賴的實測證據鏈 |
 
-目前 12 個 Boya skills 列為 **Stable**，`venue-fit` 列為 **Beta**，`framework-build`、`lit-discovery` 列為 **Draft**：不是因為「不會錯」，而是因為 Stable skill 至少經過一輪真實材料實測，並把失敗模式寫回規則；`venue-fit` 已有一份真實投稿對標案例，但仍需要更多學科、語種與期刊類型案例才能升 Stable。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
+目前 12 個 Boya skills 列為 **Stable**，`venue-fit`、`framework-build`、`lit-discovery` 列為 **Beta**：不是因為「不會錯」，而是因為 Stable skill 至少經過一輪真實材料實測，並把失敗模式寫回規則；Beta 三者已有實測案例，但仍需要更多學科、語種或資料類型案例才能升 Stable。未來新增 skill 一律先從 Draft 或 Beta 開始，不可未測即標 Stable。
 
 - **venue-fit**（0.3.0 新增）：目前 **Beta**——已用作者碩論對標《公共行政學報》真實投稿規範，見 `examples/2026-06-18-venuefit-thesis-jpa.md`。升 Stable 條件：再補至少 1 個不同語種或不同學科投稿案例，並確認「不猜作者須知」「學位論文轉期刊先判文稿類型」規則可重複成立。
 - **framework-build**（0.X.0 新增，2026-06-22 升 0.1.0 Beta）：目前 **Beta**——已有 3 份真實定錨案例：JASM 國際關係／經濟安全（`examples/2026-06-21-framework-jasm.md`）、作者碩論文組實證／混合方法（`examples/2026-06-22-framework-thesis.md`，固化偽並列主框架／隱性遷移代價／混合方法漏質性抓手三坑）、**人文思辨型 LLM silicon sampling 知識論**（`examples/2026-06-22-framework-humanist.md`，固化思辨版框架沙拉／人文型操作化＝分析維度／跨域遷移代價／跨哲學子域預警四坑）。三例覆蓋「概念框架」與「理論視角」兩個分流，eval MUST #1「分學科分流」已驗。升 Stable 條件：再補至少 1 個政策分析型「分析框架」案例，確認三分流全覆蓋且主要 MUST/MUST NOT 可重複。
-- **lit-discovery**（0.5.0 新增）：目前 **Draft**——已有 1 份真實探勘案例（`examples/2026-06-21-litdiscovery-genai-public-sector.md`，公部門×生成式 AI，實打 OpenAlex／Crossref）。升 Beta 需再補至少 1 個不同學科或以中文文獻為主的探勘案例，確認「候選全來自真實命中」「中文查無標 ❓ 不硬湊」「弱相關不靜默丟棄」「候選只交棒不冒充已查證」可重複成立。
+- **lit-discovery**（0.5.0 新增，2026-06-30 升 0.6.0 Beta、同日打磨升 0.6.1）：目前 **Beta**——已有 3 份真實案例：①探勘核心（`examples/2026-06-21-litdiscovery-genai-public-sector.md`，公部門×生成式 AI，實打 OpenAlex／Crossref）；②**新增第 3.5 步 venue 證據**（`examples/2026-06-30-litdiscovery-venue-evidence.md`，借鑒 paper-quality-filter，固化「來源表缺 SSCI」「無刊名先解 DOI」「預印本不給級」並補入 SSCI）；③**venue 命中路徑壓測**（`examples/2026-06-30-litdiscovery-venue-tssci-match.md`，實抓國科會官方 TSSCI／THCI 名單，命中《公共行政學報》等台灣期刊、走通命中＋版次標註，固化「官方頁也可能非最新版／精確比對不自動更正／CSSCI 非公開可抓／無 API 須標未新撈」四坑）。升 Stable 條件：①再補 1 個不同學科或以中文文獻為主的**探勘**案例；②**API 恢復後**補 1 個「中文題探勘→撈真實文章→venue 比對」**全鏈**案例（案例③因本輪 discovery API 不可用，只壓測了 venue 比對層、未含新撈文章），並補抓 TSSCI 2025（適用2026）與 CSSCI 官方名單。
 
 ## Evidence Ledger 最小格式
 
@@ -96,8 +96,48 @@ Boya 維持人文社科研究者可讀、可手動介入的技能庫，不把每
 | framework-build | 0.0.2 Draft | 2026-06-22 | 作者碩論（立委助理×生成式 AI，TAM＋科技壓力＋社會影響），文獻已過 lit-matrix | 偽並列主框架（平鋪≠並列地位）、隱性遷移代價（✅支撐≠免遷移）、混合方法漏質性抓手 | examples/2026-06-22-framework-thesis.md |
 | framework-build | 0.1.0 Beta | 2026-06-22 | 社計博士生 LLM silicon sampling 知識論（批判實在論×四原則主義），人文思辨型首例 | 思辨版框架沙拉（跨哲學子域並列≠層數貪疊）、人文型操作化＝分析維度、老倫理框架跨域遷移代價、研究問題跨子域步驟 2 預警 | examples/2026-06-22-framework-humanist.md |
 | outline-builder | 0.0.4 | 2026-06-27 | silicon sampling 知識論（接力 framework-build 定錨框架），人文思辨型正向搭骨架＋topic-sentence 前置首跑 | 讓步句冒充主題句（思辨型）、段落主題句覆讀章論點 | examples/2026-06-27-outlinebuilder-silicon-sampling.md |
+| lit-discovery | 0.6.0 Beta | 2026-06-30 | 沿用公部門×生成式 AI 候選，加跑新增 venue 證據步驟（借鑒 paper-quality-filter），Crossref 解 DOI 補刊名 | 來源表缺 SSCI／英文社科候選落空、無刊名須先解 DOI、預印本不給級 | examples/2026-06-30-litdiscovery-venue-evidence.md |
+| lit-discovery | 0.6.1 Beta | 2026-06-30 | 台灣期刊命中壓測，實抓國科會官方 TSSCI／THCI 名單對比《公共行政學報》等 | 官方頁也可能非最新版（抓到名單適用2024）、近似刊名查無不自動更正、CSSCI 非公開可抓、無 discovery API 須誠實標未新撈 | examples/2026-06-30-litdiscovery-venue-tssci-match.md |
 
-## Evidence Ledger 紀錄（2026-06-27 outline-builder topic-sentence 前置首跑）
+## Evidence Ledger 紀錄（2026-06-30 lit-discovery venue 命中路徑壓測，對真實 TSSCI 官方名單）
+
+### 2026-06-30 · lit-discovery · 命中路徑走通＋官方頁也可能非最新版
+
+- claim：venue 命中須回指官方名單原列並標抓取版次；官方頁本身也可能不是最新版，須記適用期間＋抓取日。
+- source：examples/2026-06-30-litdiscovery-venue-tssci-match.md（實抓 hss.ntu.edu.tw TSSCI／THCI 名單；《公共行政學報》命中政治學門 TSSCI 第一級）。
+- check：對官方名單精確比對——公共行政學報→第一級、行政暨政策學報→第二級、資訊管理學報→第二級，皆核出學門與級別；頁面標「名單適用2024、更新2024-05-28」，而 2025 名單（適用2026）另已存在。
+- result：通過。命中路徑首次走通；命中一律標 `TSSCI 名單適用2024`，並提示可能有更新版，未寫「現行」。
+- next：已寫回 SKILL 已知陷阱 7、knowledge/venues.md 抓名單注意①、eval；升 Stable 待補 TSSCI 2025／CSSCI 名單與全鏈中文案例。
+
+### 2026-06-30 · lit-discovery · 精確比對查無不自動更正／無 API 須標未新撈
+
+- claim：近似刊名查無不得自動改判為相近真刊；CSSCI 無官方名單須待查；discovery API 不可用時須誠實標「未新撈」，不得假裝檢索。
+- source：同 example（#4「公共行政學刊」近似誤名、#5 大陸 CSSCI 候選；本輪 bash 網路 000、web_fetch 清單端點回空）。
+- check：「公共行政學刊」名單查無→標 ❓待查，未改成「公共行政學報」；大陸刊無官方 CSSCI 名單→❓待查；本輪無法新撈文章，example 明記「僅就已知刊名比對、未捏造文章」。
+- result：通過。查無不更正、無源不補級、無 API 不假裝；全程無捏造文章標題或 DOI。
+- next：已寫回 SKILL 已知陷阱 8–10、eval（MUST NOT 自動更正／假裝檢索／憑記憶補級）。
+
+## Evidence Ledger 紀錄（2026-06-30 lit-discovery 新增 venue 證據步驟，借鑒 paper-quality-filter）
+
+> 評估 `yilaai/paper-quality-filter`（雙語 venue 證據 skill＋本地分級資料集＋自動排序腳本）。其理工本位分區（JCR／CAS／CCF／EI）、寫死閾值的自動排序腳本、無日期靜態資料集皆撞本庫設計邊界與誠信鐵律，**整套不採用**；只取「拿真表查、附證據、查不到老實標、最後人來定」骨架，改寫成人文社科版 venue 證據步驟（無腳本、人在環中、來源標版次年份）。
+
+### 2026-06-30 · lit-discovery · 來源表缺 SSCI＝英文社科候選一律落空
+
+- claim：英文社會科學候選對應的國際索引是 SSCI；原 venue 來源表只放 A&HCI（只收藝術人文），會讓正牌 SSCI 期刊被誤標「查無」。
+- source：examples/2026-06-30-litdiscovery-venue-evidence.md（第 1 筆 Crossref 解出 container-title＝Journal of Information Science, SAGE, ISSN 0165-5515）。
+- check：拿刊名查 `knowledge/venues.md` 五張表（CSSCI／TSSCI／北大／AMI／A&HCI），全不命中→只能標 ❓待查；判定問題在「表沒納 SSCI」而非「刊不好」。
+- result：通過修正——`knowledge/venues.md` 補一列 SSCI（與 A&HCI 並列國際線），僅當「收錄與否」用、不引入 IF 分區（守不採理工分區邊界）。eval／SKILL 涵蓋名單同步補 SSCI。
+- next：已寫回 knowledge/venues.md、skills/lit-discovery/SKILL.md 第 3.5 步、evals/lit-discovery.md。
+
+### 2026-06-30 · lit-discovery · venue 證據第一道關＝有沒有刊名，沒有先解 DOI
+
+- claim：只有標題＋DOI、無 venue 欄位時不能判出處；須先解 DOI 補 container-title，解不出標 ❓，不靠記憶補刊名；預印本不給 venue 級。
+- source：同 example（候選只記標題＋DOI；SSRN／TechRxiv 兩筆為預印本；中文學位論文非期刊）。
+- check：以 Crossref 公開 API 實解 4 個 DOI，1 筆得真刊名、1 筆未解出→❓；2 筆預印本按鐵律不給級；學位論文標不適用。全程無一筆被硬給等級。
+- result：通過。5 筆中 0 筆被編造分級；三句免責（強≠切題／查無≠論文差／你定）有講。
+- next：已寫回 SKILL 第 3.5 步（先解 DOI／預印本不給級）；升 Stable 仍待中文／台灣期刊為主候選壓測命中路徑。
+
+
 
 ### 2026-06-27 · outline-builder · topic-sentence 前置在思辨型須辨「讓步—反轉」
 
